@@ -1,0 +1,7 @@
+/build/
+/sync/
+/*.userdb/
+/trime.yaml
+/default.yaml
+/installation.yaml
+/user.yaml
