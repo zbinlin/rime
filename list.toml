@@ -1,0 +1,9 @@
+[rime/rime-pinyin-simp]
+pinyin_simp.dict.yaml
+pinyin_simp.schema.yaml
+
+[rime/rime-wubi]
+wubi86.dict.yaml
+wubi86.schema.yaml
+wubi_pinyin.schema.yaml
+wubi_trad.schema.yaml
