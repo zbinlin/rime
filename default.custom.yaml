@@ -1,12 +1,40 @@
 patch:
     schema_list:
+        - schema: wubi86_jidian
+        - schema: wubi86_jidian_pinyin
+        - schema: wubi86_jidian_trad
         - schema: wubi86
         - schema: wubi_pinyin
+        - schema: numbers
+
+    # Menu
+    menu:
+        page_size: 7                  # 候选词数量
+
+    #-----------------------------------------------
+    # 中英文切换自定义
+    #-----------------------------------------------
+    # inline_ascii  在输入法的临时英文编辑区内输入字母，数字，符号，空格等，回车上屏后自动复位到中文
+    # commit_text   已输入的候选文字上屏并切换至英文输入模式
+    # commit_code   已输入的编码字符上屏并切换至英文输入模式
+    # -----------------------------------------------
+    # 参考链接： https://gist.github.com/lotem/2981316
+
+    ascii_composer:
+        good_old_caps_lock: true       # true: 在保持 cap 键原有的特征， false: 点击不会切换大小写
+        switch_key:
+            Caps_Lock: commit_code     # 如果想用 cap 键切换中英文输入，就修改为上面三种的任一一种，否则用 noop
+            Shift_L: commit_code       # macOs 上 shift 键不区别左右，设置参数同上
+            Shift_R: commit_code
+            Control_L: noop
+            Control_R: noop
+
     punctuator:
         full_shape:
             __include: punctuation:/full_shape
         half_shape:
             __include: punctuation:/half_shape
+
     key_binder:
         bindings:
             - key_bindings:/emacs_editing
@@ -14,6 +42,7 @@ patch:
             - key_bindings:/paging_with_minus_equal
             - key_bindings:/paging_with_comma_period
             - key_bindings:/numbered_mode_switch
+
     recognizer:
         patterns:
             email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
