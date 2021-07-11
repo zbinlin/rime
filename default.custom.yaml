@@ -12,6 +12,7 @@ patch:
     - schema: numbers
     - schema: wubi86_jidian_pinyin
     - schema: wubi86_jidian_trad
+    - schema: wubi86_jidian_trad_pinyin
     - schema: pinyin_simp
 
   # Menu
@@ -143,6 +144,6 @@ patch:
       "~": "~"
   recognizer:
     patterns:
-      email: "^[-_.0-9A-Za-z]*@.*$"
+      email: "^[-_.0-9A-Za-z]+@.*$"
       uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
       url: "^(www[.]|https?:|ftp[.:]|mailto:|file:|localhost).*$|^[a-z]+[.].+$"

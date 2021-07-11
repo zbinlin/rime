@@ -49,6 +49,7 @@ Rime 输入法的优势在于它高度的可自定义化，不单单可以定义
 1. 下载 五笔配置文件 [https://github.com/KyleBing/rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian)
 2. macOS 上的 鼠须管 配置文件存放目录是 `~/Library/Rime`，把下载后的`rime-wubi86-jidian`内的所有文件移到 `Rime` 目录中，
 3. 点击状态栏上的输入法图标，下拉菜单中选择 <kbd>部署</kbd> (英文是<kbd>Deploy</kbd>），或者可以直接使用快捷键 <kbd>control</kbd> + <kbd>option</kbd> + <kbd>~</kbd>
+**注意：**`Rime` 目录下的 `Build` 目录是程序生成的，不要把配置文件放在那里面，无视它即可。
 
 放的时候目录结构是这样的：
 ```bash
@@ -77,7 +78,7 @@ Windows 中的配置方法：
 
 ## 四、使用说明
 
-### 1. 呼出菜单
+### 1. 选项菜单
 在输入状态时，<kbd>control</kbd> + <kbd>0</kbd> 或者 <kbd>shift</kbd> + <kbd>control</kbd> + <kbd>0</kbd> 弹出菜单
 
 ### 2. 菜单内容
@@ -147,6 +148,26 @@ Windows 中的配置方法：
 
 文件 [`rime.lua`](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/rime.lua) 盛放的是调用的方法，你需要在相应的 `XXXX.schema.yaml` 文件的 `engine`/`translators` 字段添加一些东西，可以参阅本库的 [`wubi86_jidian.schema.yaml`](https://github.com/KyleBing/rime-wubi86-jidian/blob/master/wubi86_jidian.schema.yaml) 文件。
 具体 `rime.lua` 文件说明参阅这里： [https://github.com/hchunhui/librime-lua/blob/master/sample/lua/date.lua](https://github.com/hchunhui/librime-lua/blob/master/sample/lua/date.lua)
+
+### 5. 开启自动造词
+
+<img width="463" alt="auto-create-words" src="https://user-images.githubusercontent.com/12215982/114480534-4b922200-9c35-11eb-8d08-4c8eacb407a2.png">
+
+__注意__: 这样会关闭自动上屏，顶字上屏的功能。
+
+需要修改 `wubi86_jidian.schema.yaml` 下面几个内容
+
+```bash
+speller:
+  # max_code_length: 4                 # 四码上屏
+  auto_select: false                   # 自动上屏
+
+translator:
+  enable_sentence: true                # 句子输入模式
+  enable_user_dict: true               # 是否开启用户词典（用户词典记录动态字词频，用户词）
+  enable_encoder: true
+
+```
 
 
 ## 六、其它相关链接

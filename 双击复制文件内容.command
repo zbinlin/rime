@@ -3,10 +3,19 @@
 cd -- "$(dirname "$BASH_SOURCE")"
 
 function show_menu() {
-  echo "================================================"
-  echo "  是否用当前文件夹内容覆盖 \033[31m~/Library/Rime\033[0m 目录？"
-  echo "  ( 已经在 ~/Library/Rime 目录时请不要运行这个 )"
-  echo "================================================"
+
+  if [[ $PWD = ~/Library/Rime ]]
+  then
+      echo "================================================"
+      green "您正确安放相关配置文件到 ~/Library/Rime 目录, "
+      green "无需再次运行该脚本，已自动退出脚本"
+      echo "================================================"
+      exit 1
+  else
+      echo "================================================"
+      echo "  是否用当前文件夹内容覆盖 \033[31m~/Library/Rime\033[0m 目录？"
+      echo "================================================"
+  fi
 }
 
 function red() {
@@ -41,14 +50,17 @@ read choice
 
 case $choice in
 y)
-  if [ ! -d "~/Desktop/Rime" ];then # 如果存在 Rime 目录
-    mkdir ~/Desktop/Rime
+  if [ ! -d "~/Library/Rime" ];then # 如果不存在 Library/Rime 目录
+    mkdir ~/Library/Rime
   fi
   cp -Rf ~/Library/Rime  ~/Desktop/备份的\ Rime\ 文件夹 &&
-  cp -Rf ./* ~/Desktop/Rime/
+  cp -Rf ./* ~/Library/Rime/
+
   echo_result $? "复制文件到 ~/Library/Rime 目录"
   ;;
 n)
+  echo "================================================"
+  green "已取消操作"
   exit
   ;;
 
