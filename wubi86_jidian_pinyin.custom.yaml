@@ -1,0 +1,4 @@
+patch:
+  # Emoji
+  # Reference: ./dicts/emoji/emoji_suggestion.yaml
+  __include: dicts/emoji/emoji_suggestion:/patch
