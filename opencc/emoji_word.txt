@@ -1,0 +1,1 @@
+../dicts/emoji/opencc/emoji_word.txt
