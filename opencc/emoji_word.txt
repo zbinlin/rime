@@ -1,1 +1,1 @@
-../dicts/emoji/opencc/emoji_word.txt
+../recipes/emoji/opencc/emoji_word.txt
