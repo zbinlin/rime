@@ -1,7 +1,7 @@
 patch:
     # Emoji
-    # Reference: ./dicts/emoji/emoji_suggestion.yaml
-    __include: dicts/emoji/emoji_suggestion:/patch
+    # Reference: ./recipes/emoji/emoji_suggestion.yaml
+    __include: recipes/emoji/emoji_suggestion:/patch
 
     translator/enable_sentence: true # 句子输入模式
     translator/enable_user_dict: true # 是否开启用户词典（用户词典记录动态字词频，用户词）
