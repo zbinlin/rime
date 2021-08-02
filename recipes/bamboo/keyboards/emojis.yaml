@@ -1,0 +1,3387 @@
+_header_:
+    author: "Colin Cheng ⎗zbinlin@outlook.com⎘"
+    ascii_mode: 0
+    columns: 10
+    width: 10
+    height: 34
+
+Keyboards:
+    KeyboardEmojiSmileysAndEmotion: {label: ☺️, send: Eisu_toggle, select: emoji_smileys_and_emotion_0}
+    KeyboardEmojiPeopleAndBody: {label: 🙍, send: Eisu_toggle, select: emoji_people_and_body_0}
+    KeyboardEmojiAnimalsAndNature: {label: 🦜, send: Eisu_toggle, select: emoji_animals_and_nature_0}
+    KeyboardEmojiFoodAndDrink: {label: 🍔, send: Eisu_toggle, select: emoji_food_and_drink_0}
+    KeyboardEmojiTravelAndPlaces: {label: 🌍️, send: Eisu_toggle, select: emoji_travel_and_places_0}
+    KeyboardEmojiActivities: {label: 🎁, send: Eisu_toggle, select: emoji_activities_0}
+    KeyboardEmojiObjects: {label: 💎, send: Eisu_toggle, select: emoji_objects_0}
+    KeyboardEmojiSymbols: {label: 🅾️, send: Eisu_toggle, select: emoji_symbols_0}
+    KeyboardEmojiFlags: {label: 🏁, send: Eisu_toggle, select: emoji_flags_0}
+    KeyboardEmojisPageUp: {label: '⎗', send: Eisu_toggle, select: .prior}
+    KeyboardEmojisPageDown: {label: '⎘', send: Eisu_toggle, select: .next}
+    KeyboardEmojisPageUpDisabled: {label: '⎗', click: '', key_back_color: disabled_bg, key_text_color: disabled_fg}
+    KeyboardEmojisPageDownDisabled: {label: '⎘', click: '', key_back_color: disabled_bg, key_text_color: disabled_fg}
+
+smileys_and_emotion_0:
+    __include: /_header_
+    name: Smileys & Emotion 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '😀'}
+        - {click: '😃'}
+        - {click: '😄'}
+        - {click: '😁'}
+        - {click: '😆'}
+        - {click: '😅'}
+        - {click: '🤣'}
+        - {click: '😂'}
+        - {click: '🙂'}
+        - {click: '🙃'}
+
+        - {click: '😉'}
+        - {click: '😊'}
+        - {click: '😇'}
+        - {click: '🥰'}
+        - {click: '😍'}
+        - {click: '🤩'}
+        - {click: '😘'}
+        - {click: '😗'}
+        - {click: '☺️'}
+        - {click: '😚'}
+
+        - {click: '😙'}
+        - {click: '🥲'}
+        - {click: '😋'}
+        - {click: '😛'}
+        - {click: '😜'}
+        - {click: '🤪'}
+        - {click: '😝'}
+        - {click: '🤑'}
+        - {click: '🤗'}
+        - {click: '🤭'}
+
+        - {click: '🤫'}
+        - {click: '🤔'}
+        - {click: '🤐'}
+        - {click: '🤨'}
+        - {click: '😐️'}
+        - {click: '😑'}
+        - {click: '😶'}
+        - {click: '😶‍🌫️'}
+        - {click: '😏'}
+        - {click: '😒'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUpDisabled, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+smileys_and_emotion_1:
+    __include: /_header_
+    name: Smileys & Emotion 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🙄'}
+        - {click: '😬'}
+        - {click: '😮‍💨'}
+        - {click: '🤥'}
+        - {click: '😌'}
+        - {click: '😔'}
+        - {click: '😪'}
+        - {click: '🤤'}
+        - {click: '😴'}
+        - {click: '😷'}
+
+        - {click: '🤒'}
+        - {click: '🤕'}
+        - {click: '🤢'}
+        - {click: '🤮'}
+        - {click: '🤧'}
+        - {click: '🥵'}
+        - {click: '🥶'}
+        - {click: '🥴'}
+        - {click: '😵'}
+        - {click: '😵‍💫'}
+
+        - {click: '🤯'}
+        - {click: '🤠'}
+        - {click: '🥳'}
+        - {click: '🥸'}
+        - {click: '😎'}
+        - {click: '🤓'}
+        - {click: '🧐'}
+        - {click: '😕'}
+        - {click: '😟'}
+        - {click: '🙁'}
+
+        - {click: '☹️'}
+        - {click: '😮'}
+        - {click: '😯'}
+        - {click: '😲'}
+        - {click: '😳'}
+        - {click: '🥺'}
+        - {click: '😦'}
+        - {click: '😧'}
+        - {click: '😨'}
+        - {click: '😰'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+smileys_and_emotion_2:
+    __include: /_header_
+    name: Smileys & Emotion 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '😥'}
+        - {click: '😢'}
+        - {click: '😭'}
+        - {click: '😱'}
+        - {click: '😖'}
+        - {click: '😣'}
+        - {click: '😞'}
+        - {click: '😓'}
+        - {click: '😩'}
+        - {click: '😫'}
+
+        - {click: '🥱'}
+        - {click: '😤'}
+        - {click: '😡'}
+        - {click: '😠'}
+        - {click: '🤬'}
+        - {click: '😈'}
+        - {click: '👿'}
+        - {click: '💀'}
+        - {click: '☠️'}
+        - {click: '💩'}
+
+        - {click: '🤡'}
+        - {click: '👹'}
+        - {click: '👺'}
+        - {click: '👻'}
+        - {click: '👽️'}
+        - {click: '👾'}
+        - {click: '🤖'}
+        - {click: '😺'}
+        - {click: '😸'}
+        - {click: '😹'}
+
+        - {click: '😻'}
+        - {click: '😼'}
+        - {click: '😽'}
+        - {click: '🙀'}
+        - {click: '😿'}
+        - {click: '😾'}
+        - {click: '🙈'}
+        - {click: '🙉'}
+        - {click: '🙊'}
+        - {click: '💋'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+smileys_and_emotion_3:
+    __include: /_header_
+    name: Smileys & Emotion 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '💌'}
+        - {click: '💘'}
+        - {click: '💝'}
+        - {click: '💖'}
+        - {click: '💗'}
+        - {click: '💓'}
+        - {click: '💞'}
+        - {click: '💕'}
+        - {click: '💟'}
+        - {click: '❣️'}
+
+        - {click: '💔'}
+        - {click: '❤️‍🔥'}
+        - {click: '❤️‍🩹'}
+        - {click: '❤️'}
+        - {click: '🧡'}
+        - {click: '💛'}
+        - {click: '💚'}
+        - {click: '💙'}
+        - {click: '💜'}
+        - {click: '🤎'}
+
+        - {click: '🖤'}
+        - {click: '🤍'}
+        - {click: '💯'}
+        - {click: '💢'}
+        - {click: '💥'}
+        - {click: '💫'}
+        - {click: '💦'}
+        - {click: '💨'}
+        - {click: '🕳️'}
+        - {click: '💣️'}
+
+        - {click: '💬'}
+        - {click: '👁️‍🗨️'}
+        - {click: '🗨️'}
+        - {click: '🗯️'}
+        - {click: '💭'}
+        - {click: '💤'}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_0:
+    __include: /_header_
+    name: People & Body 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '👋'}
+        - {click: '🤚'}
+        - {click: '🖐️'}
+        - {click: '✋️'}
+        - {click: '🖖'}
+        - {click: '👌'}
+        - {click: '🤌'}
+        - {click: '🤏'}
+        - {click: '✌️'}
+        - {click: '🤞'}
+
+        - {click: '🤟'}
+        - {click: '🤘'}
+        - {click: '🤙'}
+        - {click: '👈️'}
+        - {click: '👉️'}
+        - {click: '👆️'}
+        - {click: '🖕'}
+        - {click: '👇️'}
+        - {click: '☝️'}
+        - {click: '👍️'}
+
+        - {click: '👎️'}
+        - {click: '✊️'}
+        - {click: '👊'}
+        - {click: '🤛'}
+        - {click: '🤜'}
+        - {click: '👏'}
+        - {click: '🙌'}
+        - {click: '👐'}
+        - {click: '🤲'}
+        - {click: '🤝'}
+
+        - {click: '🙏'}
+        - {click: '✍️'}
+        - {click: '💅'}
+        - {click: '🤳'}
+        - {click: '💪'}
+        - {click: '🦾'}
+        - {click: '🦿'}
+        - {click: '🦵'}
+        - {click: '🦶'}
+        - {click: '👂️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_1:
+    __include: /_header_
+    name: People & Body 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🦻'}
+        - {click: '👃'}
+        - {click: '🧠'}
+        - {click: '🫀'}
+        - {click: '🫁'}
+        - {click: '🦷'}
+        - {click: '🦴'}
+        - {click: '👀'}
+        - {click: '👁️'}
+        - {click: '👅'}
+
+        - {click: '👄'}
+        - {click: '👶'}
+        - {click: '🧒'}
+        - {click: '👦'}
+        - {click: '👧'}
+        - {click: '🧑'}
+        - {click: '👱'}
+        - {click: '👨'}
+        - {click: '🧔'}
+        - {click: '🧔‍♂️'}
+
+        - {click: '🧔‍♀️'}
+        - {click: '👨‍🦰'}
+        - {click: '👨‍🦱'}
+        - {click: '👨‍🦳'}
+        - {click: '👨‍🦲'}
+        - {click: '👩'}
+        - {click: '👩‍🦰'}
+        - {click: '🧑‍🦰'}
+        - {click: '👩‍🦱'}
+        - {click: '🧑‍🦱'}
+
+        - {click: '👩‍🦳'}
+        - {click: '🧑‍🦳'}
+        - {click: '👩‍🦲'}
+        - {click: '🧑‍🦲'}
+        - {click: '👱‍♀️'}
+        - {click: '👱‍♂️'}
+        - {click: '🧓'}
+        - {click: '👴'}
+        - {click: '👵'}
+        - {click: '🙍'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_2:
+    __include: /_header_
+    name: People & Body 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🙍‍♂️'}
+        - {click: '🙍‍♀️'}
+        - {click: '🙎'}
+        - {click: '🙎‍♂️'}
+        - {click: '🙎‍♀️'}
+        - {click: '🙅'}
+        - {click: '🙅‍♂️'}
+        - {click: '🙅‍♀️'}
+        - {click: '🙆'}
+        - {click: '🙆‍♂️'}
+
+        - {click: '🙆‍♀️'}
+        - {click: '💁'}
+        - {click: '💁‍♂️'}
+        - {click: '💁‍♀️'}
+        - {click: '🙋'}
+        - {click: '🙋‍♂️'}
+        - {click: '🙋‍♀️'}
+        - {click: '🧏'}
+        - {click: '🧏‍♂️'}
+        - {click: '🧏‍♀️'}
+
+        - {click: '🙇'}
+        - {click: '🙇‍♂️'}
+        - {click: '🙇‍♀️'}
+        - {click: '🤦'}
+        - {click: '🤦‍♂️'}
+        - {click: '🤦‍♀️'}
+        - {click: '🤷'}
+        - {click: '🤷‍♂️'}
+        - {click: '🤷‍♀️'}
+        - {click: '🧑‍⚕️'}
+
+        - {click: '👨‍⚕️'}
+        - {click: '👩‍⚕️'}
+        - {click: '🧑‍🎓️'}
+        - {click: '👨‍🎓️'}
+        - {click: '👩‍🎓️'}
+        - {click: '🧑‍🏫'}
+        - {click: '👨‍🏫'}
+        - {click: '👩‍🏫'}
+        - {click: '🧑‍⚖️'}
+        - {click: '👨‍⚖️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_3:
+    __include: /_header_
+    name: People & Body 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '👩‍⚖️'}
+        - {click: '🧑‍🌾'}
+        - {click: '👨‍🌾'}
+        - {click: '👩‍🌾'}
+        - {click: '🧑‍🍳'}
+        - {click: '👨‍🍳'}
+        - {click: '👩‍🍳'}
+        - {click: '🧑‍🔧'}
+        - {click: '👨‍🔧'}
+        - {click: '👩‍🔧'}
+
+        - {click: '🧑‍🏭️'}
+        - {click: '👨‍🏭️'}
+        - {click: '👩‍🏭️'}
+        - {click: '🧑‍💼'}
+        - {click: '👨‍💼'}
+        - {click: '👩‍💼'}
+        - {click: '🧑‍🔬'}
+        - {click: '👨‍🔬'}
+        - {click: '👩‍🔬'}
+        - {click: '🧑‍💻️'}
+
+        - {click: '👨‍💻️'}
+        - {click: '👩‍💻️'}
+        - {click: '🧑‍🎤'}
+        - {click: '👨‍🎤'}
+        - {click: '👩‍🎤'}
+        - {click: '🧑‍🎨'}
+        - {click: '👨‍🎨'}
+        - {click: '👩‍🎨'}
+        - {click: '🧑‍✈️'}
+        - {click: '👨‍✈️'}
+
+        - {click: '👩‍✈️'}
+        - {click: '🧑‍🚀'}
+        - {click: '👨‍🚀'}
+        - {click: '👩‍🚀'}
+        - {click: '🧑‍🚒'}
+        - {click: '👨‍🚒'}
+        - {click: '👩‍🚒'}
+        - {click: '👮'}
+        - {click: '👮‍♂️'}
+        - {click: '👮‍♀️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_4:
+    __include: /_header_
+    name: People & Body 4
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🕵️'}
+        - {click: '🕵️‍♂️'}
+        - {click: '🕵️‍♀️'}
+        - {click: '💂'}
+        - {click: '💂‍♂️'}
+        - {click: '💂‍♀️'}
+        - {click: '🥷'}
+        - {click: '👷'}
+        - {click: '👷‍♂️'}
+        - {click: '👷‍♀️'}
+
+        - {click: '🤴'}
+        - {click: '👸'}
+        - {click: '👳'}
+        - {click: '👳‍♂️'}
+        - {click: '👳‍♀️'}
+        - {click: '👲'}
+        - {click: '🧕'}
+        - {click: '🤵'}
+        - {click: '🤵‍♂️'}
+        - {click: '🤵‍♀️'}
+
+        - {click: '👰'}
+        - {click: '👰‍♂️'}
+        - {click: '👰‍♀️'}
+        - {click: '🤰'}
+        - {click: '🤱'}
+        - {click: '👩‍🍼'}
+        - {click: '👨‍🍼'}
+        - {click: '🧑‍🍼'}
+        - {click: '👼'}
+        - {click: '🎅'}
+
+        - {click: '🤶'}
+        - {click: '🧑‍🎄'}
+        - {click: '🦸'}
+        - {click: '🦸‍♂️'}
+        - {click: '🦸‍♀️'}
+        - {click: '🦹'}
+        - {click: '🦹‍♂️'}
+        - {click: '🦹‍♀️'}
+        - {click: '🧙'}
+        - {click: '🧙‍♂️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_5:
+    __include: /_header_
+    name: People & Body 5
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🧙‍♀️'}
+        - {click: '🧚'}
+        - {click: '🧚‍♂️'}
+        - {click: '🧚‍♀️'}
+        - {click: '🧛'}
+        - {click: '🧛‍♂️'}
+        - {click: '🧛‍♀️'}
+        - {click: '🧜'}
+        - {click: '🧜‍♂️'}
+        - {click: '🧜‍♀️'}
+
+        - {click: '🧝'}
+        - {click: '🧝‍♂️'}
+        - {click: '🧝‍♀️'}
+        - {click: '🧞'}
+        - {click: '🧞‍♂️'}
+        - {click: '🧞‍♀️'}
+        - {click: '🧟'}
+        - {click: '🧟‍♂️'}
+        - {click: '🧟‍♀️'}
+        - {click: '💆'}
+
+        - {click: '💆‍♂️'}
+        - {click: '💆‍♀️'}
+        - {click: '💇'}
+        - {click: '💇‍♂️'}
+        - {click: '💇‍♀️'}
+        - {click: '🚶'}
+        - {click: '🚶‍♂️'}
+        - {click: '🚶‍♀️'}
+        - {click: '🧍'}
+        - {click: '🧍‍♂️'}
+
+        - {click: '🧍‍♀️'}
+        - {click: '🧎'}
+        - {click: '🧎‍♂️'}
+        - {click: '🧎‍♀️'}
+        - {click: '🧑‍🦯'}
+        - {click: '👨‍🦯'}
+        - {click: '👩‍🦯'}
+        - {click: '🧑‍🦼'}
+        - {click: '👨‍🦼'}
+        - {click: '👩‍🦼'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_6:
+    __include: /_header_
+    name: People & Body 6
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🧑‍🦽'}
+        - {click: '👨‍🦽'}
+        - {click: '👩‍🦽'}
+        - {click: '🏃'}
+        - {click: '🏃‍♂️'}
+        - {click: '🏃‍♀️'}
+        - {click: '💃'}
+        - {click: '🕺'}
+        - {click: '🕴️'}
+        - {click: '👯'}
+
+        - {click: '👯‍♂️'}
+        - {click: '👯‍♀️'}
+        - {click: '🧖'}
+        - {click: '🧖‍♂️'}
+        - {click: '🧖‍♀️'}
+        - {click: '🧗'}
+        - {click: '🧗‍♂️'}
+        - {click: '🧗‍♀️'}
+        - {click: '🤺'}
+        - {click: '🏇'}
+
+        - {click: '⛷️'}
+        - {click: '🏂️'}
+        - {click: '🏌️'}
+        - {click: '🏌️‍♂️'}
+        - {click: '🏌️‍♀️'}
+        - {click: '🏄️'}
+        - {click: '🏄️‍♂️'}
+        - {click: '🏄️‍♀️'}
+        - {click: '🚣'}
+        - {click: '🚣‍♂️'}
+
+        - {click: '🚣‍♀️'}
+        - {click: '🏊️'}
+        - {click: '🏊️‍♂️'}
+        - {click: '🏊️‍♀️'}
+        - {click: '⛹️'}
+        - {click: '⛹️‍♂️'}
+        - {click: '⛹️‍♀️'}
+        - {click: '🏋️'}
+        - {click: '🏋️‍♂️'}
+        - {click: '🏋️‍♀️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_7:
+    __include: /_header_
+    name: People & Body 7
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🚴'}
+        - {click: '🚴‍♂️'}
+        - {click: '🚴‍♀️'}
+        - {click: '🚵'}
+        - {click: '🚵‍♂️'}
+        - {click: '🚵‍♀️'}
+        - {click: '🤸'}
+        - {click: '🤸‍♂️'}
+        - {click: '🤸‍♀️'}
+        - {click: '🤼'}
+
+        - {click: '🤼‍♂️'}
+        - {click: '🤼‍♀️'}
+        - {click: '🤽'}
+        - {click: '🤽‍♂️'}
+        - {click: '🤽‍♀️'}
+        - {click: '🤾'}
+        - {click: '🤾‍♂️'}
+        - {click: '🤾‍♀️'}
+        - {click: '🤹'}
+        - {click: '🤹‍♂️'}
+
+        - {click: '🤹‍♀️'}
+        - {click: '🧘'}
+        - {click: '🧘‍♂️'}
+        - {click: '🧘‍♀️'}
+        - {click: '🛀'}
+        - {click: '🛌'}
+        - {click: '🧑‍🤝‍🧑'}
+        - {click: '👭'}
+        - {click: '👫'}
+        - {click: '👬'}
+
+        - {click: '💏'}
+        - {click: '👩‍❤️‍💋‍👨'}
+        - {click: '👨‍❤️‍💋‍👨'}
+        - {click: '👩‍❤️‍💋‍👩'}
+        - {click: '💑'}
+        - {click: '👩‍❤️‍👨'}
+        - {click: '👨‍❤️‍👨'}
+        - {click: '👩‍❤️‍👩'}
+        - {click: '👪️'}
+        - {click: '👨‍👩‍👦'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+people_and_body_8:
+    __include: /_header_
+    name: People & Body 8
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '👨‍👩‍👧'}
+        - {click: '👨‍👩‍👧‍👦'}
+        - {click: '👨‍👩‍👦‍👦'}
+        - {click: '👨‍👩‍👧‍👧'}
+        - {click: '👨‍👨‍👦'}
+        - {click: '👨‍👨‍👧'}
+        - {click: '👨‍👨‍👧‍👦'}
+        - {click: '👨‍👨‍👦‍👦'}
+        - {click: '👨‍👨‍👧‍👧'}
+        - {click: '👩‍👩‍👦'}
+
+        - {click: '👩‍👩‍👧'}
+        - {click: '👩‍👩‍👧‍👦'}
+        - {click: '👩‍👩‍👦‍👦'}
+        - {click: '👩‍👩‍👧‍👧'}
+        - {click: '👨‍👦'}
+        - {click: '👨‍👦‍👦'}
+        - {click: '👨‍👧'}
+        - {click: '👨‍👧‍👦'}
+        - {click: '👨‍👧‍👧'}
+        - {click: '👩‍👦'}
+
+        - {click: '👩‍👦‍👦'}
+        - {click: '👩‍👧'}
+        - {click: '👩‍👧‍👦'}
+        - {click: '👩‍👧‍👧'}
+        - {click: '🗣️'}
+        - {click: '👤'}
+        - {click: '👥'}
+        - {click: '🫂'}
+        - {click: '👣'}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+component_0:
+    __include: /_header_
+    name: Component 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🏻'}
+        - {click: '🏼'}
+        - {click: '🏽'}
+        - {click: '🏾'}
+        - {click: '🏿'}
+        - {click: '🦰'}
+        - {click: '🦱'}
+        - {click: '🦳'}
+        - {click: '🦲'}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: BackSpace, width: 22.5}
+
+
+animals_and_nature_0:
+    __include: /_header_
+    name: Animals & Nature 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🐵'}
+        - {click: '🐒'}
+        - {click: '🦍'}
+        - {click: '🦧'}
+        - {click: '🐶'}
+        - {click: '🐕️'}
+        - {click: '🦮'}
+        - {click: '🐕️‍🦺'}
+        - {click: '🐩'}
+        - {click: '🐺'}
+
+        - {click: '🦊'}
+        - {click: '🦝'}
+        - {click: '🐱'}
+        - {click: '🐈️'}
+        - {click: '🐈️‍⬛️'}
+        - {click: '🦁'}
+        - {click: '🐯'}
+        - {click: '🐅'}
+        - {click: '🐆'}
+        - {click: '🐴'}
+
+        - {click: '🐎'}
+        - {click: '🦄'}
+        - {click: '🦓'}
+        - {click: '🦌'}
+        - {click: '🦬'}
+        - {click: '🐮'}
+        - {click: '🐂'}
+        - {click: '🐃'}
+        - {click: '🐄'}
+        - {click: '🐷'}
+
+        - {click: '🐖'}
+        - {click: '🐗'}
+        - {click: '🐽'}
+        - {click: '🐏'}
+        - {click: '🐑'}
+        - {click: '🐐'}
+        - {click: '🐪'}
+        - {click: '🐫'}
+        - {click: '🦙'}
+        - {click: '🦒'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+animals_and_nature_1:
+    __include: /_header_
+    name: Animals & Nature 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🐘'}
+        - {click: '🦣'}
+        - {click: '🦏'}
+        - {click: '🦛'}
+        - {click: '🐭'}
+        - {click: '🐁'}
+        - {click: '🐀'}
+        - {click: '🐹'}
+        - {click: '🐰'}
+        - {click: '🐇'}
+
+        - {click: '🐿️'}
+        - {click: '🦫'}
+        - {click: '🦔'}
+        - {click: '🦇'}
+        - {click: '🐻'}
+        - {click: '🐻‍❄️'}
+        - {click: '🐨'}
+        - {click: '🐼'}
+        - {click: '🦥'}
+        - {click: '🦦'}
+
+        - {click: '🦨'}
+        - {click: '🦘'}
+        - {click: '🦡'}
+        - {click: '🐾'}
+        - {click: '🦃'}
+        - {click: '🐔'}
+        - {click: '🐓'}
+        - {click: '🐣'}
+        - {click: '🐤'}
+        - {click: '🐥'}
+
+        - {click: '🐦️'}
+        - {click: '🐧'}
+        - {click: '🕊️'}
+        - {click: '🦅'}
+        - {click: '🦆'}
+        - {click: '🦢'}
+        - {click: '🦉'}
+        - {click: '🦤'}
+        - {click: '🪶'}
+        - {click: '🦩'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+animals_and_nature_2:
+    __include: /_header_
+    name: Animals & Nature 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🦚'}
+        - {click: '🦜'}
+        - {click: '🐸'}
+        - {click: '🐊'}
+        - {click: '🐢'}
+        - {click: '🦎'}
+        - {click: '🐍'}
+        - {click: '🐲'}
+        - {click: '🐉'}
+        - {click: '🦕'}
+
+        - {click: '🦖'}
+        - {click: '🐳'}
+        - {click: '🐋'}
+        - {click: '🐬'}
+        - {click: '🦭'}
+        - {click: '🐟️'}
+        - {click: '🐠'}
+        - {click: '🐡'}
+        - {click: '🦈'}
+        - {click: '🐙'}
+
+        - {click: '🐚'}
+        - {click: '🐌'}
+        - {click: '🦋'}
+        - {click: '🐛'}
+        - {click: '🐜'}
+        - {click: '🐝'}
+        - {click: '🪲'}
+        - {click: '🐞'}
+        - {click: '🦗'}
+        - {click: '🪳'}
+
+        - {click: '🕷️'}
+        - {click: '🕸️'}
+        - {click: '🦂'}
+        - {click: '🦟'}
+        - {click: '🪰'}
+        - {click: '🪱'}
+        - {click: '🦠'}
+        - {click: '💐'}
+        - {click: '🌸'}
+        - {click: '💮'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+animals_and_nature_3:
+    __include: /_header_
+    name: Animals & Nature 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🏵️'}
+        - {click: '🌹'}
+        - {click: '🥀'}
+        - {click: '🌺'}
+        - {click: '🌻'}
+        - {click: '🌼'}
+        - {click: '🌷'}
+        - {click: '🌱'}
+        - {click: '🪴'}
+        - {click: '🌲'}
+
+        - {click: '🌳'}
+        - {click: '🌴'}
+        - {click: '🌵'}
+        - {click: '🌾'}
+        - {click: '🌿'}
+        - {click: '☘️'}
+        - {click: '🍀'}
+        - {click: '🍁'}
+        - {click: '🍂'}
+        - {click: '🍃'}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+food_and_drink_0:
+    __include: /_header_
+    name: Food & Drink 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🍇'}
+        - {click: '🍈'}
+        - {click: '🍉'}
+        - {click: '🍊'}
+        - {click: '🍋'}
+        - {click: '🍌'}
+        - {click: '🍍'}
+        - {click: '🥭'}
+        - {click: '🍎'}
+        - {click: '🍏'}
+
+        - {click: '🍐'}
+        - {click: '🍑'}
+        - {click: '🍒'}
+        - {click: '🍓'}
+        - {click: '🫐'}
+        - {click: '🥝'}
+        - {click: '🍅'}
+        - {click: '🫒'}
+        - {click: '🥥'}
+        - {click: '🥑'}
+
+        - {click: '🍆'}
+        - {click: '🥔'}
+        - {click: '🥕'}
+        - {click: '🌽'}
+        - {click: '🌶️'}
+        - {click: '🫑'}
+        - {click: '🥒'}
+        - {click: '🥬'}
+        - {click: '🥦'}
+        - {click: '🧄'}
+
+        - {click: '🧅'}
+        - {click: '🍄'}
+        - {click: '🥜'}
+        - {click: '🌰'}
+        - {click: '🍞'}
+        - {click: '🥐'}
+        - {click: '🥖'}
+        - {click: '🫓'}
+        - {click: '🥨'}
+        - {click: '🥯'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+food_and_drink_1:
+    __include: /_header_
+    name: Food & Drink 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🥞'}
+        - {click: '🧇'}
+        - {click: '🧀'}
+        - {click: '🍖'}
+        - {click: '🍗'}
+        - {click: '🥩'}
+        - {click: '🥓'}
+        - {click: '🍔'}
+        - {click: '🍟'}
+        - {click: '🍕'}
+
+        - {click: '🌭'}
+        - {click: '🥪'}
+        - {click: '🌮'}
+        - {click: '🌯'}
+        - {click: '🫔'}
+        - {click: '🥙'}
+        - {click: '🧆'}
+        - {click: '🥚'}
+        - {click: '🍳'}
+        - {click: '🥘'}
+
+        - {click: '🍲'}
+        - {click: '🫕'}
+        - {click: '🥣'}
+        - {click: '🥗'}
+        - {click: '🍿'}
+        - {click: '🧈'}
+        - {click: '🧂'}
+        - {click: '🥫'}
+        - {click: '🍱'}
+        - {click: '🍘'}
+
+        - {click: '🍙'}
+        - {click: '🍚'}
+        - {click: '🍛'}
+        - {click: '🍜'}
+        - {click: '🍝'}
+        - {click: '🍠'}
+        - {click: '🍢'}
+        - {click: '🍣'}
+        - {click: '🍤'}
+        - {click: '🍥'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+food_and_drink_2:
+    __include: /_header_
+    name: Food & Drink 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🥮'}
+        - {click: '🍡'}
+        - {click: '🥟'}
+        - {click: '🥠'}
+        - {click: '🥡'}
+        - {click: '🦀'}
+        - {click: '🦞'}
+        - {click: '🦐'}
+        - {click: '🦑'}
+        - {click: '🦪'}
+
+        - {click: '🍦'}
+        - {click: '🍧'}
+        - {click: '🍨'}
+        - {click: '🍩'}
+        - {click: '🍪'}
+        - {click: '🎂'}
+        - {click: '🍰'}
+        - {click: '🧁'}
+        - {click: '🥧'}
+        - {click: '🍫'}
+
+        - {click: '🍬'}
+        - {click: '🍭'}
+        - {click: '🍮'}
+        - {click: '🍯'}
+        - {click: '🍼'}
+        - {click: '🥛'}
+        - {click: '☕️'}
+        - {click: '🫖'}
+        - {click: '🍵'}
+        - {click: '🍶'}
+
+        - {click: '🍾'}
+        - {click: '🍷'}
+        - {click: '🍸️'}
+        - {click: '🍹'}
+        - {click: '🍺'}
+        - {click: '🍻'}
+        - {click: '🥂'}
+        - {click: '🥃'}
+        - {click: '🥤'}
+        - {click: '🧋'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+food_and_drink_3:
+    __include: /_header_
+    name: Food & Drink 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🧃'}
+        - {click: '🧉'}
+        - {click: '🧊'}
+        - {click: '🥢'}
+        - {click: '🍽️'}
+        - {click: '🍴'}
+        - {click: '🥄'}
+        - {click: '🔪'}
+        - {click: '🏺'}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_0:
+    __include: /_header_
+    name: Travel & Places 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🌍️'}
+        - {click: '🌎️'}
+        - {click: '🌏️'}
+        - {click: '🌐'}
+        - {click: '🗺️'}
+        - {click: '🗾'}
+        - {click: '🧭'}
+        - {click: '🏔️'}
+        - {click: '⛰️'}
+        - {click: '🌋'}
+
+        - {click: '🗻'}
+        - {click: '🏕️'}
+        - {click: '🏖️'}
+        - {click: '🏜️'}
+        - {click: '🏝️'}
+        - {click: '🏞️'}
+        - {click: '🏟️'}
+        - {click: '🏛️'}
+        - {click: '🏗️'}
+        - {click: '🧱'}
+
+        - {click: '🪨'}
+        - {click: '🪵'}
+        - {click: '🛖'}
+        - {click: '🏘️'}
+        - {click: '🏚️'}
+        - {click: '🏠️'}
+        - {click: '🏡'}
+        - {click: '🏢'}
+        - {click: '🏣'}
+        - {click: '🏤'}
+
+        - {click: '🏥'}
+        - {click: '🏦'}
+        - {click: '🏨'}
+        - {click: '🏩'}
+        - {click: '🏪'}
+        - {click: '🏫'}
+        - {click: '🏬'}
+        - {click: '🏭️'}
+        - {click: '🏯'}
+        - {click: '🏰'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_1:
+    __include: /_header_
+    name: Travel & Places 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '💒'}
+        - {click: '🗼'}
+        - {click: '🗽'}
+        - {click: '⛪️'}
+        - {click: '🕌'}
+        - {click: '🛕'}
+        - {click: '🕍'}
+        - {click: '⛩️'}
+        - {click: '🕋'}
+        - {click: '⛲️'}
+
+        - {click: '⛺️'}
+        - {click: '🌁'}
+        - {click: '🌃'}
+        - {click: '🏙️'}
+        - {click: '🌄'}
+        - {click: '🌅'}
+        - {click: '🌆'}
+        - {click: '🌇'}
+        - {click: '🌉'}
+        - {click: '♨️'}
+
+        - {click: '🎠'}
+        - {click: '🎡'}
+        - {click: '🎢'}
+        - {click: '💈'}
+        - {click: '🎪'}
+        - {click: '🚂'}
+        - {click: '🚃'}
+        - {click: '🚄'}
+        - {click: '🚅'}
+        - {click: '🚆'}
+
+        - {click: '🚇️'}
+        - {click: '🚈'}
+        - {click: '🚉'}
+        - {click: '🚊'}
+        - {click: '🚝'}
+        - {click: '🚞'}
+        - {click: '🚋'}
+        - {click: '🚌'}
+        - {click: '🚍️'}
+        - {click: '🚎'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_2:
+    __include: /_header_
+    name: Travel & Places 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🚐'}
+        - {click: '🚑️'}
+        - {click: '🚒'}
+        - {click: '🚓'}
+        - {click: '🚔️'}
+        - {click: '🚕'}
+        - {click: '🚖'}
+        - {click: '🚗'}
+        - {click: '🚘️'}
+        - {click: '🚙'}
+
+        - {click: '🛻'}
+        - {click: '🚚'}
+        - {click: '🚛'}
+        - {click: '🚜'}
+        - {click: '🏎️'}
+        - {click: '🏍️'}
+        - {click: '🛵'}
+        - {click: '🦽'}
+        - {click: '🦼'}
+        - {click: '🛺'}
+
+        - {click: '🚲️'}
+        - {click: '🛴'}
+        - {click: '🛹'}
+        - {click: '🛼'}
+        - {click: '🚏'}
+        - {click: '🛣️'}
+        - {click: '🛤️'}
+        - {click: '🛢️'}
+        - {click: '⛽️'}
+        - {click: '🚨'}
+
+        - {click: '🚥'}
+        - {click: '🚦'}
+        - {click: '🛑'}
+        - {click: '🚧'}
+        - {click: '⚓️'}
+        - {click: '⛵️'}
+        - {click: '🛶'}
+        - {click: '🚤'}
+        - {click: '🛳️'}
+        - {click: '⛴️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_3:
+    __include: /_header_
+    name: Travel & Places 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🛥️'}
+        - {click: '🚢'}
+        - {click: '✈️'}
+        - {click: '🛩️'}
+        - {click: '🛫'}
+        - {click: '🛬'}
+        - {click: '🪂'}
+        - {click: '💺'}
+        - {click: '🚁'}
+        - {click: '🚟'}
+
+        - {click: '🚠'}
+        - {click: '🚡'}
+        - {click: '🛰️'}
+        - {click: '🚀'}
+        - {click: '🛸'}
+        - {click: '🛎️'}
+        - {click: '🧳'}
+        - {click: '⌛️'}
+        - {click: '⏳️'}
+        - {click: '⌚️'}
+
+        - {click: '⏰'}
+        - {click: '⏱️'}
+        - {click: '⏲️'}
+        - {click: '🕰️'}
+        - {click: '🕛️'}
+        - {click: '🕧️'}
+        - {click: '🕐️'}
+        - {click: '🕜️'}
+        - {click: '🕑️'}
+        - {click: '🕝️'}
+
+        - {click: '🕒️'}
+        - {click: '🕞️'}
+        - {click: '🕓️'}
+        - {click: '🕟️'}
+        - {click: '🕔️'}
+        - {click: '🕠️'}
+        - {click: '🕕️'}
+        - {click: '🕡️'}
+        - {click: '🕖️'}
+        - {click: '🕢️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_4:
+    __include: /_header_
+    name: Travel & Places 4
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🕗️'}
+        - {click: '🕣️'}
+        - {click: '🕘️'}
+        - {click: '🕤️'}
+        - {click: '🕙️'}
+        - {click: '🕥️'}
+        - {click: '🕚️'}
+        - {click: '🕦️'}
+        - {click: '🌑'}
+        - {click: '🌒'}
+
+        - {click: '🌓'}
+        - {click: '🌔'}
+        - {click: '🌕️'}
+        - {click: '🌖'}
+        - {click: '🌗'}
+        - {click: '🌘'}
+        - {click: '🌙'}
+        - {click: '🌚'}
+        - {click: '🌛'}
+        - {click: '🌜️'}
+
+        - {click: '🌡️'}
+        - {click: '☀️'}
+        - {click: '🌝'}
+        - {click: '🌞'}
+        - {click: '🪐'}
+        - {click: '⭐️'}
+        - {click: '🌟'}
+        - {click: '🌠'}
+        - {click: '🌌'}
+        - {click: '☁️'}
+
+        - {click: '⛅️'}
+        - {click: '⛈️'}
+        - {click: '🌤️'}
+        - {click: '🌥️'}
+        - {click: '🌦️'}
+        - {click: '🌧️'}
+        - {click: '🌨️'}
+        - {click: '🌩️'}
+        - {click: '🌪️'}
+        - {click: '🌫️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+travel_and_places_5:
+    __include: /_header_
+    name: Travel & Places 5
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🌬️'}
+        - {click: '🌀'}
+        - {click: '🌈'}
+        - {click: '🌂'}
+        - {click: '☂️'}
+        - {click: '☔️'}
+        - {click: '⛱️'}
+        - {click: '⚡️'}
+        - {click: '❄️'}
+        - {click: '☃️'}
+
+        - {click: '⛄️'}
+        - {click: '☄️'}
+        - {click: '🔥'}
+        - {click: '💧'}
+        - {click: '🌊'}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+activities_0:
+    __include: /_header_
+    name: Activities 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🎃'}
+        - {click: '🎄'}
+        - {click: '🎆'}
+        - {click: '🎇'}
+        - {click: '🧨'}
+        - {click: '✨'}
+        - {click: '🎈'}
+        - {click: '🎉'}
+        - {click: '🎊'}
+        - {click: '🎋'}
+
+        - {click: '🎍'}
+        - {click: '🎎'}
+        - {click: '🎏'}
+        - {click: '🎐'}
+        - {click: '🎑'}
+        - {click: '🧧'}
+        - {click: '🎀'}
+        - {click: '🎁'}
+        - {click: '🎗️'}
+        - {click: '🎟️'}
+
+        - {click: '🎫'}
+        - {click: '🎖️'}
+        - {click: '🏆️'}
+        - {click: '🏅'}
+        - {click: '🥇'}
+        - {click: '🥈'}
+        - {click: '🥉'}
+        - {click: '⚽️'}
+        - {click: '⚾️'}
+        - {click: '🥎'}
+
+        - {click: '🏀'}
+        - {click: '🏐'}
+        - {click: '🏈'}
+        - {click: '🏉'}
+        - {click: '🎾'}
+        - {click: '🥏'}
+        - {click: '🎳'}
+        - {click: '🏏'}
+        - {click: '🏑'}
+        - {click: '🏒'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+activities_1:
+    __include: /_header_
+    name: Activities 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🥍'}
+        - {click: '🏓'}
+        - {click: '🏸'}
+        - {click: '🥊'}
+        - {click: '🥋'}
+        - {click: '🥅'}
+        - {click: '⛳️'}
+        - {click: '⛸️'}
+        - {click: '🎣'}
+        - {click: '🤿'}
+
+        - {click: '🎽'}
+        - {click: '🎿'}
+        - {click: '🛷'}
+        - {click: '🥌'}
+        - {click: '🎯'}
+        - {click: '🪀'}
+        - {click: '🪁'}
+        - {click: '🎱'}
+        - {click: '🔮'}
+        - {click: '🪄'}
+
+        - {click: '🧿'}
+        - {click: '🎮️'}
+        - {click: '🕹️'}
+        - {click: '🎰'}
+        - {click: '🎲'}
+        - {click: '🧩'}
+        - {click: '🧸'}
+        - {click: '🪅'}
+        - {click: '🪆'}
+        - {click: '♠️'}
+
+        - {click: '♥️'}
+        - {click: '♦️'}
+        - {click: '♣️'}
+        - {click: '♟️'}
+        - {click: '🃏'}
+        - {click: '🀄️'}
+        - {click: '🎴'}
+        - {click: '🎭️'}
+        - {click: '🖼️'}
+        - {click: '🎨'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+activities_2:
+    __include: /_header_
+    name: Activities 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🧵'}
+        - {click: '🪡'}
+        - {click: '🧶'}
+        - {click: '🪢'}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_0:
+    __include: /_header_
+    name: Objects 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '👓️'}
+        - {click: '🕶️'}
+        - {click: '🥽'}
+        - {click: '🥼'}
+        - {click: '🦺'}
+        - {click: '👔'}
+        - {click: '👕'}
+        - {click: '👖'}
+        - {click: '🧣'}
+        - {click: '🧤'}
+
+        - {click: '🧥'}
+        - {click: '🧦'}
+        - {click: '👗'}
+        - {click: '👘'}
+        - {click: '🥻'}
+        - {click: '🩱'}
+        - {click: '🩲'}
+        - {click: '🩳'}
+        - {click: '👙'}
+        - {click: '👚'}
+
+        - {click: '👛'}
+        - {click: '👜'}
+        - {click: '👝'}
+        - {click: '🛍️'}
+        - {click: '🎒'}
+        - {click: '🩴'}
+        - {click: '👞'}
+        - {click: '👟'}
+        - {click: '🥾'}
+        - {click: '🥿'}
+
+        - {click: '👠'}
+        - {click: '👡'}
+        - {click: '🩰'}
+        - {click: '👢'}
+        - {click: '👑'}
+        - {click: '👒'}
+        - {click: '🎩'}
+        - {click: '🎓️'}
+        - {click: '🧢'}
+        - {click: '🪖'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_1:
+    __include: /_header_
+    name: Objects 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '⛑️'}
+        - {click: '📿'}
+        - {click: '💄'}
+        - {click: '💍'}
+        - {click: '💎'}
+        - {click: '🔇'}
+        - {click: '🔈️'}
+        - {click: '🔉'}
+        - {click: '🔊'}
+        - {click: '📢'}
+
+        - {click: '📣'}
+        - {click: '📯'}
+        - {click: '🔔'}
+        - {click: '🔕'}
+        - {click: '🎼'}
+        - {click: '🎵'}
+        - {click: '🎶'}
+        - {click: '🎙️'}
+        - {click: '🎚️'}
+        - {click: '🎛️'}
+
+        - {click: '🎤'}
+        - {click: '🎧️'}
+        - {click: '📻️'}
+        - {click: '🎷'}
+        - {click: '🪗'}
+        - {click: '🎸'}
+        - {click: '🎹'}
+        - {click: '🎺'}
+        - {click: '🎻'}
+        - {click: '🪕'}
+
+        - {click: '🥁'}
+        - {click: '🪘'}
+        - {click: '📱'}
+        - {click: '📲'}
+        - {click: '☎️'}
+        - {click: '📞'}
+        - {click: '📟️'}
+        - {click: '📠'}
+        - {click: '🔋'}
+        - {click: '🔌'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_2:
+    __include: /_header_
+    name: Objects 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '💻️'}
+        - {click: '🖥️'}
+        - {click: '🖨️'}
+        - {click: '⌨️'}
+        - {click: '🖱️'}
+        - {click: '🖲️'}
+        - {click: '💽'}
+        - {click: '💾'}
+        - {click: '💿️'}
+        - {click: '📀'}
+
+        - {click: '🧮'}
+        - {click: '🎥'}
+        - {click: '🎞️'}
+        - {click: '📽️'}
+        - {click: '🎬️'}
+        - {click: '📺️'}
+        - {click: '📷️'}
+        - {click: '📸'}
+        - {click: '📹️'}
+        - {click: '📼'}
+
+        - {click: '🔍️'}
+        - {click: '🔎'}
+        - {click: '🕯️'}
+        - {click: '💡'}
+        - {click: '🔦'}
+        - {click: '🏮'}
+        - {click: '🪔'}
+        - {click: '📔'}
+        - {click: '📕'}
+        - {click: '📖'}
+
+        - {click: '📗'}
+        - {click: '📘'}
+        - {click: '📙'}
+        - {click: '📚️'}
+        - {click: '📓'}
+        - {click: '📒'}
+        - {click: '📃'}
+        - {click: '📜'}
+        - {click: '📄'}
+        - {click: '📰'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_3:
+    __include: /_header_
+    name: Objects 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🗞️'}
+        - {click: '📑'}
+        - {click: '🔖'}
+        - {click: '🏷️'}
+        - {click: '💰️'}
+        - {click: '🪙'}
+        - {click: '💴'}
+        - {click: '💵'}
+        - {click: '💶'}
+        - {click: '💷'}
+
+        - {click: '💸'}
+        - {click: '💳️'}
+        - {click: '🧾'}
+        - {click: '💹'}
+        - {click: '✉️'}
+        - {click: '📧'}
+        - {click: '📨'}
+        - {click: '📩'}
+        - {click: '📤️'}
+        - {click: '📥️'}
+
+        - {click: '📦️'}
+        - {click: '📫️'}
+        - {click: '📪️'}
+        - {click: '📬️'}
+        - {click: '📭️'}
+        - {click: '📮'}
+        - {click: '🗳️'}
+        - {click: '✏️'}
+        - {click: '✒️'}
+        - {click: '🖋️'}
+
+        - {click: '🖊️'}
+        - {click: '🖌️'}
+        - {click: '🖍️'}
+        - {click: '📝'}
+        - {click: '💼'}
+        - {click: '📁'}
+        - {click: '📂'}
+        - {click: '🗂️'}
+        - {click: '📅'}
+        - {click: '📆'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_4:
+    __include: /_header_
+    name: Objects 4
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🗒️'}
+        - {click: '🗓️'}
+        - {click: '📇'}
+        - {click: '📈'}
+        - {click: '📉'}
+        - {click: '📊'}
+        - {click: '📋️'}
+        - {click: '📌'}
+        - {click: '📍'}
+        - {click: '📎'}
+
+        - {click: '🖇️'}
+        - {click: '📏'}
+        - {click: '📐'}
+        - {click: '✂️'}
+        - {click: '🗃️'}
+        - {click: '🗄️'}
+        - {click: '🗑️'}
+        - {click: '🔒️'}
+        - {click: '🔓️'}
+        - {click: '🔏'}
+
+        - {click: '🔐'}
+        - {click: '🔑'}
+        - {click: '🗝️'}
+        - {click: '🔨'}
+        - {click: '🪓'}
+        - {click: '⛏️'}
+        - {click: '⚒️'}
+        - {click: '🛠️'}
+        - {click: '🗡️'}
+        - {click: '⚔️'}
+
+        - {click: '🔫'}
+        - {click: '🪃'}
+        - {click: '🏹'}
+        - {click: '🛡️'}
+        - {click: '🪚'}
+        - {click: '🔧'}
+        - {click: '🪛'}
+        - {click: '🔩'}
+        - {click: '⚙️'}
+        - {click: '🗜️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_5:
+    __include: /_header_
+    name: Objects 5
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '⚖️'}
+        - {click: '🦯'}
+        - {click: '🔗'}
+        - {click: '⛓️'}
+        - {click: '🪝'}
+        - {click: '🧰'}
+        - {click: '🧲'}
+        - {click: '🪜'}
+        - {click: '⚗️'}
+        - {click: '🧪'}
+
+        - {click: '🧫'}
+        - {click: '🧬'}
+        - {click: '🔬'}
+        - {click: '🔭'}
+        - {click: '📡'}
+        - {click: '💉'}
+        - {click: '🩸'}
+        - {click: '💊'}
+        - {click: '🩹'}
+        - {click: '🩺'}
+
+        - {click: '🚪'}
+        - {click: '🛗'}
+        - {click: '🪞'}
+        - {click: '🪟'}
+        - {click: '🛏️'}
+        - {click: '🛋️'}
+        - {click: '🪑'}
+        - {click: '🚽'}
+        - {click: '🪠'}
+        - {click: '🚿'}
+
+        - {click: '🛁'}
+        - {click: '🪤'}
+        - {click: '🪒'}
+        - {click: '🧴'}
+        - {click: '🧷'}
+        - {click: '🧹'}
+        - {click: '🧺'}
+        - {click: '🧻'}
+        - {click: '🪣'}
+        - {click: '🧼'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+objects_6:
+    __include: /_header_
+    name: Objects 6
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🪥'}
+        - {click: '🧽'}
+        - {click: '🧯'}
+        - {click: '🛒'}
+        - {click: '🚬'}
+        - {click: '⚰️'}
+        - {click: '🪦'}
+        - {click: '⚱️'}
+        - {click: '🗿'}
+        - {click: '🪧'}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_0:
+    __include: /_header_
+    name: Symbols 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🏧'}
+        - {click: '🚮'}
+        - {click: '🚰'}
+        - {click: '♿️'}
+        - {click: '🚹️'}
+        - {click: '🚺️'}
+        - {click: '🚻'}
+        - {click: '🚼️'}
+        - {click: '🚾'}
+        - {click: '🛂'}
+
+        - {click: '🛃'}
+        - {click: '🛄'}
+        - {click: '🛅'}
+        - {click: '⚠️'}
+        - {click: '🚸'}
+        - {click: '⛔️'}
+        - {click: '🚫'}
+        - {click: '🚳'}
+        - {click: '🚭️'}
+        - {click: '🚯'}
+
+        - {click: '🚱'}
+        - {click: '🚷'}
+        - {click: '📵'}
+        - {click: '🔞'}
+        - {click: '☢️'}
+        - {click: '☣️'}
+        - {click: '⬆️'}
+        - {click: '↗️'}
+        - {click: '➡️'}
+        - {click: '↘️'}
+
+        - {click: '⬇️'}
+        - {click: '↙️'}
+        - {click: '⬅️'}
+        - {click: '↖️'}
+        - {click: '↕️'}
+        - {click: '↔️'}
+        - {click: '↩️'}
+        - {click: '↪️'}
+        - {click: '⤴️'}
+        - {click: '⤵️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_1:
+    __include: /_header_
+    name: Symbols 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🔃'}
+        - {click: '🔄'}
+        - {click: '🔙'}
+        - {click: '🔚'}
+        - {click: '🔛'}
+        - {click: '🔜'}
+        - {click: '🔝'}
+        - {click: '🛐'}
+        - {click: '⚛️'}
+        - {click: '🕉️'}
+
+        - {click: '✡️'}
+        - {click: '☸️'}
+        - {click: '☯️'}
+        - {click: '✝️'}
+        - {click: '☦️'}
+        - {click: '☪️'}
+        - {click: '☮️'}
+        - {click: '🕎'}
+        - {click: '🔯'}
+        - {click: '♈️'}
+
+        - {click: '♉️'}
+        - {click: '♊️'}
+        - {click: '♋️'}
+        - {click: '♌️'}
+        - {click: '♍️'}
+        - {click: '♎️'}
+        - {click: '♏️'}
+        - {click: '♐️'}
+        - {click: '♑️'}
+        - {click: '♒️'}
+
+        - {click: '♓️'}
+        - {click: '⛎️'}
+        - {click: '🔀'}
+        - {click: '🔁'}
+        - {click: '🔂'}
+        - {click: '▶️'}
+        - {click: '⏩️'}
+        - {click: '⏭️'}
+        - {click: '⏯️'}
+        - {click: '◀️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_2:
+    __include: /_header_
+    name: Symbols 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '⏪️'}
+        - {click: '⏮️'}
+        - {click: '🔼'}
+        - {click: '⏫️'}
+        - {click: '🔽'}
+        - {click: '⏬️'}
+        - {click: '⏸️'}
+        - {click: '⏹️'}
+        - {click: '⏺️'}
+        - {click: '⏏️'}
+
+        - {click: '🎦'}
+        - {click: '🔅'}
+        - {click: '🔆'}
+        - {click: '📶'}
+        - {click: '📳'}
+        - {click: '📴'}
+        - {click: '♀️'}
+        - {click: '♂️'}
+        - {click: '⚧️'}
+        - {click: '✖️'}
+
+        - {click: '➕️'}
+        - {click: '➖️'}
+        - {click: '➗️'}
+        - {click: '♾️'}
+        - {click: '‼️'}
+        - {click: '⁉️'}
+        - {click: '❓️'}
+        - {click: '❔'}
+        - {click: '❕'}
+        - {click: '❗️'}
+
+        - {click: '〰️'}
+        - {click: '💱'}
+        - {click: '💲'}
+        - {click: '⚕️'}
+        - {click: '♻️'}
+        - {click: '⚜️'}
+        - {click: '🔱'}
+        - {click: '📛'}
+        - {click: '🔰'}
+        - {click: '⭕️'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_3:
+    __include: /_header_
+    name: Symbols 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '✅️'}
+        - {click: '☑️'}
+        - {click: '✔️'}
+        - {click: '❌️'}
+        - {click: '❎️'}
+        - {click: '➰️'}
+        - {click: '➿️'}
+        - {click: '〽️'}
+        - {click: '✳️'}
+        - {click: '✴️'}
+
+        - {click: '❇️'}
+        - {click: '©'}
+        - {click: '®'}
+        - {click: '™️'}
+        - {click: '#⃣'}
+        - {click: '*⃣'}
+        - {click: '0⃣'}
+        - {click: '1⃣'}
+        - {click: '2⃣'}
+        - {click: '3⃣'}
+
+        - {click: '4⃣'}
+        - {click: '5⃣'}
+        - {click: '6⃣'}
+        - {click: '7⃣'}
+        - {click: '8⃣'}
+        - {click: '9⃣'}
+        - {click: '🔟'}
+        - {click: '🔠'}
+        - {click: '🔡'}
+        - {click: '🔢'}
+
+        - {click: '🔣'}
+        - {click: '🔤'}
+        - {click: '🅰️'}
+        - {click: '🆎'}
+        - {click: '🅱️'}
+        - {click: '🆑'}
+        - {click: '🆒'}
+        - {click: '🆓'}
+        - {click: 'ℹ️'}
+        - {click: '🆔'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_4:
+    __include: /_header_
+    name: Symbols 4
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: 'Ⓜ️'}
+        - {click: '🆕'}
+        - {click: '🆖'}
+        - {click: '🅾️'}
+        - {click: '🆗'}
+        - {click: '🅿️'}
+        - {click: '🆘'}
+        - {click: '🆙'}
+        - {click: '🆚'}
+        - {click: '🈁'}
+
+        - {click: '🈂️'}
+        - {click: '🈷️'}
+        - {click: '🈶'}
+        - {click: '🈯️'}
+        - {click: '🉐'}
+        - {click: '🈹'}
+        - {click: '🈚️'}
+        - {click: '🈲'}
+        - {click: '🉑'}
+        - {click: '🈸'}
+
+        - {click: '🈴'}
+        - {click: '🈳'}
+        - {click: '㊗️'}
+        - {click: '㊙️'}
+        - {click: '🈺'}
+        - {click: '🈵'}
+        - {click: '🔴'}
+        - {click: '🟠'}
+        - {click: '🟡'}
+        - {click: '🟢'}
+
+        - {click: '🔵'}
+        - {click: '🟣'}
+        - {click: '🟤'}
+        - {click: '⚫️'}
+        - {click: '⚪️'}
+        - {click: '🟥'}
+        - {click: '🟧'}
+        - {click: '🟨'}
+        - {click: '🟩'}
+        - {click: '🟦'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+symbols_5:
+    __include: /_header_
+    name: Symbols 5
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmojiFlags}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🟪'}
+        - {click: '🟫'}
+        - {click: '⬛️'}
+        - {click: '⬜️'}
+        - {click: '◼️'}
+        - {click: '◻️'}
+        - {click: '◾️'}
+        - {click: '◽️'}
+        - {click: '▪️'}
+        - {click: '▫️'}
+
+        - {click: '🔶'}
+        - {click: '🔷'}
+        - {click: '🔸'}
+        - {click: '🔹'}
+        - {click: '🔺'}
+        - {click: '🔻'}
+        - {click: '💠'}
+        - {click: '🔘'}
+        - {click: '🔳'}
+        - {click: '🔲'}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_0:
+    __include: /_header_
+    name: Flags 0
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🏁'}
+        - {click: '🚩'}
+        - {click: '🎌'}
+        - {click: '🏴'}
+        - {click: '🏳️'}
+        - {click: '🏳️‍🌈'}
+        - {click: '🏳️‍⚧️'}
+        - {click: '🏴‍☠️'}
+        - {click: '🇦🇨'}
+        - {click: '🇦🇩'}
+
+        - {click: '🇦🇪'}
+        - {click: '🇦🇫'}
+        - {click: '🇦🇬'}
+        - {click: '🇦🇮'}
+        - {click: '🇦🇱'}
+        - {click: '🇦🇲'}
+        - {click: '🇦🇴'}
+        - {click: '🇦🇶'}
+        - {click: '🇦🇷'}
+        - {click: '🇦🇸'}
+
+        - {click: '🇦🇹'}
+        - {click: '🇦🇺'}
+        - {click: '🇦🇼'}
+        - {click: '🇦🇽'}
+        - {click: '🇦🇿'}
+        - {click: '🇧🇦'}
+        - {click: '🇧🇧'}
+        - {click: '🇧🇩'}
+        - {click: '🇧🇪'}
+        - {click: '🇧🇫'}
+
+        - {click: '🇧🇬'}
+        - {click: '🇧🇭'}
+        - {click: '🇧🇮'}
+        - {click: '🇧🇯'}
+        - {click: '🇧🇱'}
+        - {click: '🇧🇲'}
+        - {click: '🇧🇳'}
+        - {click: '🇧🇴'}
+        - {click: '🇧🇶'}
+        - {click: '🇧🇷'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_1:
+    __include: /_header_
+    name: Flags 1
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇧🇸'}
+        - {click: '🇧🇹'}
+        - {click: '🇧🇻'}
+        - {click: '🇧🇼'}
+        - {click: '🇧🇾'}
+        - {click: '🇧🇿'}
+        - {click: '🇨🇦'}
+        - {click: '🇨🇨'}
+        - {click: '🇨🇩'}
+        - {click: '🇨🇫'}
+
+        - {click: '🇨🇬'}
+        - {click: '🇨🇭'}
+        - {click: '🇨🇮'}
+        - {click: '🇨🇰'}
+        - {click: '🇨🇱'}
+        - {click: '🇨🇲'}
+        - {click: '🇨🇳'}
+        - {click: '🇨🇴'}
+        - {click: '🇨🇵'}
+        - {click: '🇨🇷'}
+
+        - {click: '🇨🇺'}
+        - {click: '🇨🇻'}
+        - {click: '🇨🇼'}
+        - {click: '🇨🇽'}
+        - {click: '🇨🇾'}
+        - {click: '🇨🇿'}
+        - {click: '🇩🇪'}
+        - {click: '🇩🇬'}
+        - {click: '🇩🇯'}
+        - {click: '🇩🇰'}
+
+        - {click: '🇩🇲'}
+        - {click: '🇩🇴'}
+        - {click: '🇩🇿'}
+        - {click: '🇪🇦'}
+        - {click: '🇪🇨'}
+        - {click: '🇪🇪'}
+        - {click: '🇪🇬'}
+        - {click: '🇪🇭'}
+        - {click: '🇪🇷'}
+        - {click: '🇪🇸'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_2:
+    __include: /_header_
+    name: Flags 2
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇪🇹'}
+        - {click: '🇪🇺'}
+        - {click: '🇫🇮'}
+        - {click: '🇫🇯'}
+        - {click: '🇫🇰'}
+        - {click: '🇫🇲'}
+        - {click: '🇫🇴'}
+        - {click: '🇫🇷'}
+        - {click: '🇬🇦'}
+        - {click: '🇬🇧'}
+
+        - {click: '🇬🇩'}
+        - {click: '🇬🇪'}
+        - {click: '🇬🇫'}
+        - {click: '🇬🇬'}
+        - {click: '🇬🇭'}
+        - {click: '🇬🇮'}
+        - {click: '🇬🇱'}
+        - {click: '🇬🇲'}
+        - {click: '🇬🇳'}
+        - {click: '🇬🇵'}
+
+        - {click: '🇬🇶'}
+        - {click: '🇬🇷'}
+        - {click: '🇬🇸'}
+        - {click: '🇬🇹'}
+        - {click: '🇬🇺'}
+        - {click: '🇬🇼'}
+        - {click: '🇬🇾'}
+        - {click: '🇭🇰'}
+        - {click: '🇭🇲'}
+        - {click: '🇭🇳'}
+
+        - {click: '🇭🇷'}
+        - {click: '🇭🇹'}
+        - {click: '🇭🇺'}
+        - {click: '🇮🇨'}
+        - {click: '🇮🇩'}
+        - {click: '🇮🇪'}
+        - {click: '🇮🇱'}
+        - {click: '🇮🇲'}
+        - {click: '🇮🇳'}
+        - {click: '🇮🇴'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_3:
+    __include: /_header_
+    name: Flags 3
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇮🇶'}
+        - {click: '🇮🇷'}
+        - {click: '🇮🇸'}
+        - {click: '🇮🇹'}
+        - {click: '🇯🇪'}
+        - {click: '🇯🇲'}
+        - {click: '🇯🇴'}
+        - {click: '🇯🇵'}
+        - {click: '🇰🇪'}
+        - {click: '🇰🇬'}
+
+        - {click: '🇰🇭'}
+        - {click: '🇰🇮'}
+        - {click: '🇰🇲'}
+        - {click: '🇰🇳'}
+        - {click: '🇰🇵'}
+        - {click: '🇰🇷'}
+        - {click: '🇰🇼'}
+        - {click: '🇰🇾'}
+        - {click: '🇰🇿'}
+        - {click: '🇱🇦'}
+
+        - {click: '🇱🇧'}
+        - {click: '🇱🇨'}
+        - {click: '🇱🇮'}
+        - {click: '🇱🇰'}
+        - {click: '🇱🇷'}
+        - {click: '🇱🇸'}
+        - {click: '🇱🇹'}
+        - {click: '🇱🇺'}
+        - {click: '🇱🇻'}
+        - {click: '🇱🇾'}
+
+        - {click: '🇲🇦'}
+        - {click: '🇲🇨'}
+        - {click: '🇲🇩'}
+        - {click: '🇲🇪'}
+        - {click: '🇲🇫'}
+        - {click: '🇲🇬'}
+        - {click: '🇲🇭'}
+        - {click: '🇲🇰'}
+        - {click: '🇲🇱'}
+        - {click: '🇲🇲'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_4:
+    __include: /_header_
+    name: Flags 4
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇲🇳'}
+        - {click: '🇲🇴'}
+        - {click: '🇲🇵'}
+        - {click: '🇲🇶'}
+        - {click: '🇲🇷'}
+        - {click: '🇲🇸'}
+        - {click: '🇲🇹'}
+        - {click: '🇲🇺'}
+        - {click: '🇲🇻'}
+        - {click: '🇲🇼'}
+
+        - {click: '🇲🇽'}
+        - {click: '🇲🇾'}
+        - {click: '🇲🇿'}
+        - {click: '🇳🇦'}
+        - {click: '🇳🇨'}
+        - {click: '🇳🇪'}
+        - {click: '🇳🇫'}
+        - {click: '🇳🇬'}
+        - {click: '🇳🇮'}
+        - {click: '🇳🇱'}
+
+        - {click: '🇳🇴'}
+        - {click: '🇳🇵'}
+        - {click: '🇳🇷'}
+        - {click: '🇳🇺'}
+        - {click: '🇳🇿'}
+        - {click: '🇴🇲'}
+        - {click: '🇵🇦'}
+        - {click: '🇵🇪'}
+        - {click: '🇵🇫'}
+        - {click: '🇵🇬'}
+
+        - {click: '🇵🇭'}
+        - {click: '🇵🇰'}
+        - {click: '🇵🇱'}
+        - {click: '🇵🇲'}
+        - {click: '🇵🇳'}
+        - {click: '🇵🇷'}
+        - {click: '🇵🇸'}
+        - {click: '🇵🇹'}
+        - {click: '🇵🇼'}
+        - {click: '🇵🇾'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_5:
+    __include: /_header_
+    name: Flags 5
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇶🇦'}
+        - {click: '🇷🇪'}
+        - {click: '🇷🇴'}
+        - {click: '🇷🇸'}
+        - {click: '🇷🇺'}
+        - {click: '🇷🇼'}
+        - {click: '🇸🇦'}
+        - {click: '🇸🇧'}
+        - {click: '🇸🇨'}
+        - {click: '🇸🇩'}
+
+        - {click: '🇸🇪'}
+        - {click: '🇸🇬'}
+        - {click: '🇸🇭'}
+        - {click: '🇸🇮'}
+        - {click: '🇸🇯'}
+        - {click: '🇸🇰'}
+        - {click: '🇸🇱'}
+        - {click: '🇸🇲'}
+        - {click: '🇸🇳'}
+        - {click: '🇸🇴'}
+
+        - {click: '🇸🇷'}
+        - {click: '🇸🇸'}
+        - {click: '🇸🇹'}
+        - {click: '🇸🇻'}
+        - {click: '🇸🇽'}
+        - {click: '🇸🇾'}
+        - {click: '🇸🇿'}
+        - {click: '🇹🇦'}
+        - {click: '🇹🇨'}
+        - {click: '🇹🇩'}
+
+        - {click: '🇹🇫'}
+        - {click: '🇹🇬'}
+        - {click: '🇹🇭'}
+        - {click: '🇹🇯'}
+        - {click: '🇹🇰'}
+        - {click: '🇹🇱'}
+        - {click: '🇹🇲'}
+        - {click: '🇹🇳'}
+        - {click: '🇹🇴'}
+        - {click: '🇹🇷'}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+
+flags_6:
+    __include: /_header_
+    name: Flags 6
+    keys:
+        - {click: KeyboardEmojiSmileysAndEmotion}
+        - {click: KeyboardEmojiPeopleAndBody}
+        - {click: KeyboardEmojiAnimalsAndNature}
+        - {click: KeyboardEmojiFoodAndDrink}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiSymbols}
+        - {click: KeyboardEmojiFlags, key_back_color: actived_bg, key_text_color: actived_fg}
+        - {click: KeyboardEmoticons}
+
+        - {click: '🇹🇹'}
+        - {click: '🇹🇻'}
+        - {click: '🇹🇼'}
+        - {click: '🇹🇿'}
+        - {click: '🇺🇦'}
+        - {click: '🇺🇬'}
+        - {click: '🇺🇲'}
+        - {click: '🇺🇳'}
+        - {click: '🇺🇸'}
+        - {click: '🇺🇾'}
+
+        - {click: '🇺🇿'}
+        - {click: '🇻🇦'}
+        - {click: '🇻🇨'}
+        - {click: '🇻🇪'}
+        - {click: '🇻🇬'}
+        - {click: '🇻🇮'}
+        - {click: '🇻🇳'}
+        - {click: '🇻🇺'}
+        - {click: '🇼🇫'}
+        - {click: '🇼🇸'}
+
+        - {click: '🇽🇰'}
+        - {click: '🇾🇪'}
+        - {click: '🇾🇹'}
+        - {click: '🇿🇦'}
+        - {click: '🇿🇲'}
+        - {click: '🇿🇼'}
+        - {click: '🏴󠁧󠁢󠁥󠁮󠁧󠁿'}
+        - {click: '🏴󠁧󠁢󠁳󠁣󠁴󠁿'}
+        - {click: '🏴󠁧󠁢󠁷󠁬󠁳󠁿'}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, width: 22.5}
+        - {click: KeyboardEmojisPageUp, width: 22.5}
+        - {click: ''}
+        - {click: KeyboardEmojisPageDownDisabled, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+

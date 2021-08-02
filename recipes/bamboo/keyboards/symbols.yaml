@@ -1,0 +1,58 @@
+name: 常用符号
+author: "Colin Cheng <zbinlin@outlook.com>"
+ascii_mode: 0
+columns: 10
+height: 41
+keys:
+    - {click: ！, ascii: '!'}
+    - {click: ＠, ascii: '@'}
+    - {click: ＃, ascii: '#'}
+    - {click: ＄, ascii: '$'}
+    - {click: ％, ascii: '%'}
+    - {click: ＾, ascii: '^'}
+    - {click: ＆, ascii: '&'}
+    - {click: ＊, ascii: '*'}
+    - {click: （, ascii: '('}
+    - {click: ）, ascii: ')'}
+
+    - {click: ～, ascii: '~'}
+    - {click: ｀, ascii: '^'}
+    - {click: ＿, ascii: '_'}
+    - {click: －, ascii: '-'}
+    - {click: ＋, ascii: '+'}
+    - {click: ＝, ascii: '='}
+    - {click: ｜, ascii: '|'}
+    - {click: ＼, ascii: '\'}
+    - {click: ｛, ascii: '{'}
+    - {click: ｝, ascii: '}'}
+
+    - {width: 5}
+    - {click: ￥}
+    - {click: №}
+    - {click: ℃}
+    - {click: ℉}
+    - {click: Ω}
+    - {click: ™}
+    - {click: ‰}
+    - {click: ‱}
+    - {click: ₿}
+    - {width: 5}
+
+    - {click: ShiftL}
+    - {click: ∞}
+    - {click: '¶'}
+    - {click: '©'}
+    - {click: ✓}
+    - {click: 「}
+    - {click: 」}
+    - {click: π}
+    - {click: ／, long_click: ？}
+    - {click: BackSpace}
+
+    - {click: KeyboardDefault}
+    - {click: KeyboardTextEditing, long_click: KeyboardNumeric}
+    - {click: ',', label: '，', long_click: '<', swipe_left: '(', swipe_right: '[', swipe_up: '{', paging: PageUp}
+    - {click: Space, long_click: ModeSwitch, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, width: 40}
+    - {click: '.', label: '。', long_click: '>', swipe_left: ')', swipe_right: ']', swipe_up: '}', paging: PageDown}
+    - {click: KeyboardEmojis, long_click: KeyboardEmoticons}
+    - {click: Return, long_click: Menu, swipe_up: Escape}
