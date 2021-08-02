@@ -1,0 +1,271 @@
+_header_:
+    name: 颜文字
+    author: "Colin Cheng <zbinlin@outlook.com>"
+    ascii_mode: 1
+    columns: 8
+    width: 25
+    height: 29
+
+Keyboards:
+    KeyboardEmoticonHappy: {label: 开心, send: Eisu_toggle, select: emoticon_astonished}
+    KeyboardEmoticonFond: {label: 喜欢,  send: Eisu_toggle, select: emoticon_fond}
+    KeyboardEmoticonAstonished: {label: 惊讶, send: Eisu_toggle, select: emoticon_astonished}
+    KeyboardEmoticonImpotent: {label: 无奈, send: Eisu_toggle, select: emoticon_impotent}
+    KeyboardEmoticonSad: {label: 伤心, send: Eisu_toggle, select: emoticon_sad}
+    KeyboardEmoticonMad: {label: 生气, send: Eisu_toggle, select: emoticon_mad}
+
+happy:
+    __include: /_header_
+    name: 颜文字・开心
+    keys:
+        - {click: "^_^"}
+        - {click: "^ω^"}
+        - {click: "^o^"}
+        - {click: "~\\(≧▽≦)/~"}
+
+        - {click: "*^_^*"}
+        - {click: "↖(^ω^)↗"}
+        - {click: "(^o^)／"}
+        - {click: "(=^▽^=)"}
+
+        - {click: "=^_^="}
+        - {click: "(*^ω^*)"}
+        - {click: "٩(๑^o^๑)۶"}
+        - {click: "o(￣▽￣)o"}
+
+        - {click: "Y(^_^)Y"}
+        - {click: "٩( 'ω' )و"}
+        - {click: "╰(*´︶`*)╯"}
+        - {click: "*罒▽罒*"}
+
+        - {click: "ヾ ^_^♪"}
+        - {click: "=￣ω￣="}
+        - {click: "︿(￣︶￣)︿"}
+        - {click: "(´▽｀)ノ♪"}
+
+        - {click: "乁( ˙ ω˙乁)"}
+        - {click: "✧*｡٩(ˊωˋ*)و✧*｡", key_text_size: "10"}
+        - {click: "～(￣▽￣～)(～￣▽￣)～", width: 50}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: KeyboardEmoticonFond, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, width: 12.5}
+        - {click: KeyboardEmoticonSad, width: 12.5}
+        - {click: KeyboardEmoticonMad, width: 12.5}
+        - {click: BackSpace, width: 12.5}
+
+fond:
+    __include: /_header_
+    name: 颜文字・喜欢
+    keys:
+        - {click: "QwQ"}
+        - {click: "(●—●)"}
+        - {click: "(๑• . •๑)"}
+        - {click: "ヾ(≧O≦)〃嗷~", key_text_size: "12"}
+
+        - {click: "罒ω罒"}
+        - {click: "(｡ì _ í｡)"}
+        - {click: "(๑•ี_เ•ี๑)"}
+        - {click: "ㄟ(≧◇≦)ㄏ"}
+
+        - {click: "(*/ω＼*)"}
+        - {click: "●▽●"}
+        - {click: "٩(๑òωó๑)۶"}
+        - {click: "✺◟(∗❛ัᴗ❛ั∗)◞✺", key_text_size: "12"}
+
+        - {click: "( σ'ω')σ"}
+        - {click: "♡＾▽＾♡"}
+        - {click: "(๑•̀ㅂ•́)و✧"}
+        - {click: "(ง •̀_•́)ง"}
+
+        - {click: "(｡･ω･｡)ﾉ♡"}
+        - {click: "(☆_☆)"}
+        - {click: "(๑°3°๑)"}
+        - {click: "_(•̀ω•́ 」∠)_"}
+
+        - {click: "♪～(´ε｀　)"}
+        - {click: "～(^з^)-☆"}
+        - {click: "(´∀｀)♡"}
+        - {click: "ლ(´ڡ`ლ)"}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, width: 12.5}
+        - {click: KeyboardEmoticonFond, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, width: 12.5}
+        - {click: KeyboardEmoticonSad, width: 12.5}
+        - {click: KeyboardEmoticonMad, width: 12.5}
+        - {click: BackSpace, width: 12.5}
+
+
+astonished:
+    __include: /_header_
+    name: 颜文字・惊讶
+    keys:
+        - {click: "⊙_⊙"}
+        - {click: "d(ŐдŐ๑)"}
+        - {click: "Σ( ° △ °|||)︴"}
+        - {click: "(((φ(◎ロ◎;)φ)))", key_text_size: "10"}
+
+        - {click: "⊙▽⊙"}
+        - {click: "(๑ŐдŐ)b"}
+        - {click: "╭(°A°`)╮"}
+        - {click: "(๑òᆺó๑)"}
+
+        - {click: "⊙ω⊙"}
+        - {click: "Σ(っ °Д °;)っ"}
+        - {click: " (ﾟДﾟ≡ﾟдﾟ)!?"}
+        - {click: "( *・ω・)✄╰ひ╯", key_text_size: "10"}
+
+        - {click: "(⊙x⊙;)"}
+        - {click: "┌(。Д。)┐"}
+        - {click: "(°ー°〃)"}
+        - {click: "备用"}
+
+        - {click: "︽⊙_⊙︽"}
+        - {click: "!!!∑(°Д°ノ)ノ"}
+        - {click: "(๑ŐдŐ)b☆d(ŐдŐ๑)", width: 50}
+
+        - {click: "Σ⊙▃⊙川"}
+        - {click: "ヽ(*。>Д<)o゜"}
+        - {click: "━((*′д｀)爻(′д｀*))━!!!!", width: 50}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, width: 12.5}
+        - {click: KeyboardEmoticonFond, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, width: 12.5}
+        - {click: KeyboardEmoticonSad, width: 12.5}
+        - {click: KeyboardEmoticonMad, width: 12.5}
+        - {click: BackSpace, width: 12.5}
+
+impotent:
+    __include: /_header_
+    name: 颜文字・无奈
+    keys:
+        - {click: "=_="}
+        - {click: "╮(╯_╰)╭"}
+        - {click: "（︶︿︶）"}
+        - {click: "_(:з」∠)_"}
+
+        - {click: "@_@"}
+        - {click: "╮(╯▽╰)╭"}
+        - {click: "(＠￣ー￣＠)"}
+        - {click: "_(:3」∠❀)_"}
+
+        - {click: "눈_눈"}
+        - {click: "╭(╯ε╰)╮"}
+        - {click: "(ー_ー)!!"}
+        - {click: "_(:D)∠)_"}
+
+        - {click: "o_O"}
+        - {click: "╭(╯^╰)╮"}
+        - {click: "(；一_一)"}
+        - {click: "´_>`"}
+
+        - {click: "-_-#"}
+        - {click: "┑(￣Д ￣)┍"}
+        - {click: "≡￣﹏￣≡"}
+        - {click: "○|￣|_"}
+
+        - {click: "-_-||"}
+        - {click: "ㄟ( ▔, ▔ )ㄏ"}
+        - {click: "( ＿ ＿)ノ｜壁"}
+        - {click: "▄█▀█●"}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, width: 12.5}
+        - {click: KeyboardEmoticonFond, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: KeyboardEmoticonSad, width: 12.5}
+        - {click: KeyboardEmoticonMad, width: 12.5}
+        - {click: BackSpace, width: 12.5}
+
+sad:
+    __include: /_header_
+    name: 颜文字・伤心
+    keys:
+        - {click: "(＞﹏＜)"}
+        - {click: "T_T"}
+        - {click: "⊙︿⊙"}
+        - {click: "〒▽〒"}
+
+        - {click: "⊙﹏⊙"}
+        - {click: "π_π"}
+        - {click: "(｡•́︿•̀｡)"}
+        - {click: "(ToT)/~~~"}
+
+        - {click: "╯﹏╰"}
+        - {click: "ಥ_ಥ"}
+        - {click: "(╥╯^╰╥)"}
+        - {click: "(〃′o`)"}
+
+        - {click: "●﹏●"}
+        - {click: "( •̥́ ˍ •̀ू )"}
+        - {click: "(つд⊂)"}
+        - {click: "心塞(´-ωก`)"}
+
+        - {click: "(╥﹏╥)"}
+        - {click: "┭┮﹏┭┮"}
+        - {click: "（；´д｀）ゞ"}
+        - {click: "(´;︵;`)"}
+
+        - {click: "(。﹏。)"}
+        - {click: "┗( T﹏T )┛"}
+        - {click: "QAQ"}
+        - {click: "ヘ(_ _ヘ)"}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, width: 12.5}
+        - {click: KeyboardEmoticonFond, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, width: 12.5}
+        - {click: KeyboardEmoticonSad, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: KeyboardEmoticonMad, width: 12.5}
+        - {click: BackSpace, width: 12.5}
+
+mad:
+    __include: /_header_
+    name: 颜文字・生气
+    keys:
+        - {click: "╰（‵□′）╯"}
+        - {click: "(*￣︿￣)"}
+        - {click: ">o<"}
+        - {click: "(-`ェ´-怒)"}
+
+        - {click: "ヽ(‘⌒´メ)ノ"}
+        - {click: "(*｀Ω´*)v"}
+        - {click: "(｡•ˇ‸ˇ•｡)"}
+        - {click: "(怒｀Д´怒)"}
+
+        - {click: "٩(๑`^´๑)۶"}
+        - {click: "(;｀O´)o"}
+        - {click: "╰_╯"}
+        - {click: "(#｀皿´)<怒怒怒!!!", key_text_size: "10"}
+
+        - {click: "<(｀^´)>"}
+        - {click: "（｀Δ´）！"}
+        - {click: "ψ(｀∇´)ψ"}
+        - {click: "(；′⌒`)"}
+
+        - {click: "s(・｀ヘ´・;)ゞ", key_text_size: "12"}
+        - {click: "(▼皿▼#)"}
+        - {click: "￣へ￣"}
+        - {click: "←_←"}
+
+        - {click: "（╯‵□′）╯︵┴─┴", key_text_size: "9"}
+        - {click: "（▼へ▼メ）"}
+        - {click: "☄ฺ(◣д◢)☄ฺ"}
+        - {click: "→_→"}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
+        - {click: KeyboardEmoticonHappy, width: 12.5}
+        - {click: KeyboardEmoticonFond, width: 12.5}
+        - {click: KeyboardEmoticonAstonished, width: 12.5}
+        - {click: KeyboardEmoticonImpotent, width: 12.5}
+        - {click: KeyboardEmoticonSad, width: 12.5}
+        - {click: KeyboardEmoticonMad, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
+        - {click: BackSpace, width: 12.5}

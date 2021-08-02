@@ -1,0 +1,34 @@
+name: 数字键盘
+author: "Colin Cheng <zbinlin@outlook.com>"
+ascii_mode: 1
+columns: 6
+width: 16.66
+height: 51.50
+keys:
+    - {click: '^', long_click: '{}{Left}', height: 52}
+    - {click: '+', long_click: '±'}
+    - {click: 1}
+    - {click: 2, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: 3}
+    - {click: '=', long_click: '≠'}
+
+    - {click: '!', long_click: '[]{Left}'}
+    - {click: '-', long_click: '_'}
+    - {click: 4, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: 5, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: 6, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: '#', long_click: '(){Left}'}
+
+    - {click: KeyboardTextEditing, long_click: KeyboardSymbols}
+    - {click: '*', long_click: '@'}
+    - {click: 7}
+    - {click: 8, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
+    - {click: 9}
+    - {click: BackSpace}
+
+    - {click: KeyboardDefault}
+    - {click: '/', long_click: '%', swipe_right: '\', swipe_down: '|'}
+    - {click: Space}
+    - {click: 0}
+    - {click: '.', long_click: ','}
+    - {click: Return, long_click: Menu}

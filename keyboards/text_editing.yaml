@@ -1,0 +1,30 @@
+name: 文本编辑模式
+author: "Colin Cheng <zbinlin@outlook.com>"
+ascii_mode: 0
+columns: 5
+width: 20
+height: 51.50
+keys:
+    - {click: Esc, height: 52}
+    - {click: Home}
+    - {click: Up}
+    - {click: End}
+    - {click: Insert}
+
+    - {click: Tab}
+    - {click: Left}
+    - {click: Select, long_click: SelectAll}
+    - {click: Right}
+    - {click: Delete}
+
+    - {click: KeyboardNumeric, long_click: KeyboardSymbols}
+    - {click: PageUp}
+    - {click: Down}
+    - {click: PageDown}
+    - {click: BackSpace}
+
+    - {click: KeyboardDefault}
+    - {click: Cut}
+    - {click: Copy}
+    - {click: Paste, long_click: PasteClip}
+    - {click: Return, long_click: Menu}
