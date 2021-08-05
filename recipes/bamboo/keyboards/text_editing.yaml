@@ -3,9 +3,9 @@ author: "Colin Cheng <zbinlin@outlook.com>"
 ascii_mode: 0
 columns: 5
 width: 20
-height: 51.50
+height: 48
 keys:
-    - {click: Esc, height: 52}
+    - {click: Esc, height: 49}
     - {click: Home}
     - {click: Up}
     - {click: End}
@@ -23,7 +23,7 @@ keys:
     - {click: PageDown}
     - {click: BackSpace}
 
-    - {click: KeyboardDefault}
+    - {click: KeyboardDefault, height: 49}
     - {click: Cut}
     - {click: Copy}
     - {click: Paste, long_click: PasteClip}

@@ -1,9 +1,9 @@
 _header_:
-    author: "Colin Cheng ⎗zbinlin@outlook.com⎘"
+    author: "Colin Cheng <zbinlin@outlook.com>"
     ascii_mode: 0
     columns: 10
     width: 10
-    height: 34
+    height: 32
 
 Keyboards:
     KeyboardEmojiSmileysAndEmotion: {label: ☺️, send: Eisu_toggle, select: emoji_smileys_and_emotion_0}
@@ -17,8 +17,8 @@ Keyboards:
     KeyboardEmojiFlags: {label: 🏁, send: Eisu_toggle, select: emoji_flags_0}
     KeyboardEmojisPageUp: {label: '⎗', send: Eisu_toggle, select: .prior}
     KeyboardEmojisPageDown: {label: '⎘', send: Eisu_toggle, select: .next}
-    KeyboardEmojisPageUpDisabled: {label: '⎗', click: '', key_back_color: disabled_bg, key_text_color: disabled_fg}
-    KeyboardEmojisPageDownDisabled: {label: '⎘', click: '', key_back_color: disabled_bg, key_text_color: disabled_fg}
+    KeyboardEmojisPageUpDisabled: {label: '⎗', click: ''}
+    KeyboardEmojisPageDownDisabled: {label: '⎘', click: ''}
 
 smileys_and_emotion_0:
     __include: /_header_
@@ -80,7 +80,7 @@ smileys_and_emotion_0:
         - {click: '😒'}
 
         - {click: KeyboardDefault, width: 22.5}
-        - {click: KeyboardEmojisPageUpDisabled, width: 22.5}
+        - {click: KeyboardEmojisPageUpDisabled, key_text_color: disabled_fg, hilited_key_text_color: disabled_fg, hilited_key_back_color: functional_bg, width: 22.5}
         - {click: ''}
         - {click: KeyboardEmojisPageDown, width: 22.5}
         - {click: BackSpace, width: 22.5}
@@ -3382,6 +3382,5 @@ flags_6:
         - {click: KeyboardDefault, width: 22.5}
         - {click: KeyboardEmojisPageUp, width: 22.5}
         - {click: ''}
-        - {click: KeyboardEmojisPageDownDisabled, width: 22.5}
+        - {click: KeyboardEmojisPageDownDisabled, key_text_color: disabled_fg, hilited_key_text_color: disabled_fg, hilited_key_back_color: functional_bg, width: 22.5}
         - {click: BackSpace, width: 22.5}
-

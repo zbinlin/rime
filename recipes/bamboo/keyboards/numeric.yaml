@@ -3,9 +3,9 @@ author: "Colin Cheng <zbinlin@outlook.com>"
 ascii_mode: 1
 columns: 6
 width: 16.66
-height: 51.50
+height: 48
 keys:
-    - {click: '^', long_click: '{}{Left}', height: 52}
+    - {click: '^', long_click: '{}{Left}', height: 49}
     - {click: '+', long_click: '±'}
     - {click: 1}
     - {click: 2, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
@@ -26,7 +26,7 @@ keys:
     - {click: 9}
     - {click: BackSpace}
 
-    - {click: KeyboardDefault}
+    - {click: KeyboardDefault, height: 49}
     - {click: '/', long_click: '%', swipe_right: '\', swipe_down: '|'}
     - {click: Space}
     - {click: 0}

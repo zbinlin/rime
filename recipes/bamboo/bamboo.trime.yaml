@@ -6,11 +6,11 @@ name: 竹
 author: "Colin Cheng <zbinlin@outlook.com>"
 
 def:
-    rows:
-        row4: &row4 51.50
-        row5: &row5 41
-        row6: &row6 34
-        row7: &row7 29
+    #rows:
+    #    row4: &row4 51.50
+    #    row5: &row5 41
+    #    row6: &row6 34
+    #    row7: &row7 29
     columns:
         col5: &col5 20
         col6: &col6 16.66
@@ -34,15 +34,17 @@ style:
     hanb_font: hanb.ttf #擴充字型
     horizontal: true #水平模式
     horizontal_gap: 1 #鍵水平間距
+    vertical_correction: 0
+    vertical_gap: 1 #鍵盤行距
     layout: #懸浮窗口設置
         position: fixed #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要>=Android5.0)
-        min_length: 4 #最小詞長
-        max_length: 14 #超過字數則換行
+        min_length: 10 #最小詞長
+        max_length: 20 #超過字數則換行
         sticky_lines: 1 #固頂行數
         max_entries: 5 #最大詞條數
         all_phrases: false #所有滿足條件的詞語都顯示在窗口
         border: 2 #邊框寬度
-        max_width: 230 #最大寬度，超過則自動換行
+        max_width: 320 #最大寬度，超過則自動換行
         max_height: 400 #最大高度
         min_width: 40 #最小寬度
         min_height: 0 #最小高度
@@ -57,7 +59,7 @@ style:
         background: background.png #顏色或者backgrounds目錄下的圖片文件名
         movable: once #是否可移動窗口，或僅移動一次 true|false|once
     window: #懸浮窗口組件
-        - {start: "", move: 'ㄓ ', end: ""}
+        #- {start: "", move: 'ㄓ ', end: ""}
         - {start: "", composition: "%s", end: "", letter_spacing: 0} #letter_spacing需要>=Android5.0。TODO: 不爲0時，會導致不換行的問題
         - {start: "\n", label: "%s.", candidate: "%s", comment: " %s", end: "", sep: " "}
     key_font: symbol.ttf #鍵盤字型
@@ -121,12 +123,18 @@ style:
         - emoji_flags_4
         - emoji_flags_5
         - emoji_flags_6
-        - emoticon_happy
-        - emoticon_fond
-        - emoticon_astonished
-        - emoticon_impotent
-        - emoticon_sad
-        - emoticon_mad
+        - emoticon_happy_0
+        - emoticon_happy_1
+        - emoticon_fond_0
+        - emoticon_fond_1
+        - emoticon_astonished_0
+        - emoticon_astonished_1
+        - emoticon_impotent_0
+        - emoticon_impotent_1
+        - emoticon_sad_0
+        - emoticon_sad_1
+        - emoticon_mad_0
+        - emoticon_mad_1
         - symbols
     label_text_size: 22 #標籤字號
     label_font: label.ttf #編標籤字型
@@ -147,66 +155,76 @@ style:
     text_font: latin.ttf #編碼字型
     text_height: 22 #編碼區高度
     text_size: 16 #編碼區字號
-    vertical_correction: 0
-    vertical_gap: 1 #鍵盤行距
 
 
 fallback_colors:
     __include: trime:/fallback_colors
 
 colors:
-    primary: &primary 0xfff
+    primary: &primary 0xb9dec9
     secondary: &secondary 0xfff
     tertiary: &tertiary 0xfff
+    default_fg: &default_fg 0x000000
+    default_bg: &default_bg 0xffffff
+    pressed_fg: &pressed_fg 0xffffff
+    pressed_bg: &pressed_bg 0x327941
+    actived_fg: &actived_fg 0xffffff
+    actived_bg: &actived_bg 0x3a8c4a
+    disabled_fg: &disabled_fg 0x808080
+    disabled_bg: &disabled_bg 0x00000000
+    functional_fg: &functional_fg 0x000000
+    functional_bg: &functional_bg 0xf5f5f5
 
 preset_color_schemes:
     default:
         name: 默认
         author: "Colin Cheng <zbinlin@outlook.com>"
 
-        default_fg: 0xfff
-        default_bg: 0xfff
+        default_fg: *default_fg
+        default_bg: *default_bg
         hover_fg: 0xfff
         hover_bg: 0xfff
-        pressed_fg: 0xfff
-        pressed_bg: 0xfff
-        actived_fg: 0xfff
-        actived_bg: 0xfff
-        disabled_fg: 0xfff
-        disabled_bg: 0xfff
+        pressed_fg: *pressed_fg
+        pressed_bg: *pressed_bg
+        actived_fg: *actived_fg
+        actived_bg: *actived_bg
+        disabled_fg: *disabled_fg
+        disabled_bg: *disabled_bg
+        functional_fg: *functional_fg
+        functional_bg: *functional_bg
 
-        back_color: 0xe4e7e9 #候選區背景
-        border_color: 0xc1c7ca #邊框
-        candidate_separator_color: 0xc1c7ca #候選分割背景
-        candidate_text_color: 0x5a676e #候選文字
-        comment_text_color: 0x7b868c #提示
-        hilited_back_color: 0xccd3d7da #標明編碼背景
-        hilited_candidate_back_color: 0xd3d7da #標明候選背景
-        hilited_candidate_text_color: 0x000000 #標明候選文字
-        hilited_comment_text_color: 0x000000 #標明提示
-        hilited_key_back_color: 0xd3d7da #標明按鍵背景
-        hilited_key_symbol_color: 0x000000 #標明按鍵符號
-        hilited_key_text_color: 0x000000 #標明按鍵文字
-        hilited_off_key_back_color: 0xd3d7da #標明按鍵關閉狀態背景
-        hilited_off_key_text_color: 0x000000 #標明按鍵關閉狀態文字
-        hilited_on_key_back_color: 0xd3d7da #標明按鍵打開狀態背景
-        hilited_on_key_text_color: 0x000000 #標明按鍵打開狀態文字
-        hilited_text_color: 0x23948e #標明編碼
-        key_border_color: 0xeceff1 #按鍵邊框
-        key_symbol_color: 0x5f6b73 #按鍵符號
-        key_text_color: 0x37474f #按鍵文字
-        key_back_color: 0xeceff1 #按鍵背景
-        keyboard_back_color: 0xffffff #鍵盤背景
-        label_color: 0x000000 #標籤
-        off_key_back_color: 0xd3d7da #按鍵關閉狀態背景
-        off_key_text_color: 0x000000 #按鍵關閉狀態文字
-        on_key_back_color: 0x23948e #按鍵打開狀態背景
-        on_key_text_color: 0x37474f #按鍵打開狀態文字
+        back_color: 0xf2f4f7 #候選區背景
+        border_color: 0x805a6d62 #邊框
+        candidate_separator_color: 0x00000000 #候選分割背景
+        candidate_text_color: 0x5a6d62 #候選文字
+        comment_text_color: 0x9ca4b0 #提示
+        hilited_back_color: 0x00000000 #標明編碼背景
+        hilited_candidate_back_color: 0x00000000 #標明候選背景
+        hilited_candidate_text_color: 0x035715 #標明候選文字
+        hilited_comment_text_color: 0x035715 #標明提示
+        hilited_key_back_color: *pressed_bg #標明按鍵背景
+        hilited_key_symbol_color: *pressed_fg #標明按鍵符號
+        hilited_key_text_color: *pressed_fg #標明按鍵文字
+        hilited_off_key_back_color: *pressed_bg #標明按鍵關閉狀態背景
+        hilited_off_key_text_color: *pressed_fg #標明按鍵關閉狀態文字
+        hilited_on_key_back_color: *pressed_bg #標明按鍵打開狀態背景
+        hilited_on_key_text_color: *pressed_fg #標明按鍵打開狀態文字
+        hilited_text_color: 0x035715 #標明編碼
+        key_border_color: 0x000000 #按鍵邊框
+        key_symbol_color: 0x5a6d62 #按鍵符號
+        key_text_color: *default_fg #按鍵文字
+        key_back_color: *default_bg #按鍵背景
+        keyboard_back_color: 0xe8eaed #鍵盤背景
+        label_color: 0x00000f #標籤
+        off_key_back_color: *functional_bg #按鍵關閉狀態背景
+        off_key_text_color: *functional_fg #按鍵關閉狀態文字
+        on_key_back_color: *actived_bg #按鍵打開狀態背景
+        on_key_text_color: *actived_fg #按鍵打開狀態文字
         preview_back_color: 0x55bfbfbf #按鍵提示背景
         preview_text_color: 0x23948e #按鍵提示文字
         shadow_color: 0x000000 #按鍵文字陰影
-        text_color: 0x5a676e #編碼
-        text_back_color: 0xcce4e7e9 #編碼區背景
+        text_color: 0x035715 #編碼
+        text_back_color: 0xc8f2f4f7 #編碼區背景
 
 
 android_keys:
@@ -325,7 +343,7 @@ preset_keys:
     KeyboardNumeric: {label: "123", send: Eisu_toggle, select: numeric}
     KeyboardTextEditing: {label: ⎀, send: Eisu_toggle, select: text_editing}
     KeyboardEmojis: {label: ☺︎, send: Eisu_toggle, select: emoji_smileys_and_emotion_0}
-    KeyboardEmoticons: {label: 颜, send: Eisu_toggle, select: emoticon_happy}
+    KeyboardEmoticons: {label: ':-)', send: Eisu_toggle, select: emoticon_happy_0}
     KeyboardSymbols: {label: "!?#", send: Eisu_toggle, select: symbols}
 
     __patch:
@@ -443,18 +461,30 @@ preset_keyboards:
     emoji_flags_6:
         __include: keyboards/emojis:/flags_6
 
-    emoticon_happy:
-        __include: keyboards/emoticons:/happy
-    emoticon_fond:
-        __include: keyboards/emoticons:/fond
-    emoticon_astonished:
-        __include: keyboards/emoticons:/astonished
-    emoticon_impotent:
-        __include: keyboards/emoticons:/impotent
-    emoticon_sad:
-        __include: keyboards/emoticons:/sad
-    emoticon_mad:
-        __include: keyboards/emoticons:/mad
+    emoticon_happy_0:
+        __include: keyboards/emoticons:/happy_0
+    emoticon_happy_1:
+        __include: keyboards/emoticons:/happy_1
+    emoticon_fond_0:
+        __include: keyboards/emoticons:/fond_0
+    emoticon_fond_1:
+        __include: keyboards/emoticons:/fond_1
+    emoticon_astonished_0:
+        __include: keyboards/emoticons:/astonished_0
+    emoticon_astonished_1:
+        __include: keyboards/emoticons:/astonished_1
+    emoticon_impotent_0:
+        __include: keyboards/emoticons:/impotent_0
+    emoticon_impotent_1:
+        __include: keyboards/emoticons:/impotent_1
+    emoticon_sad_0:
+        __include: keyboards/emoticons:/sad_0
+    emoticon_sad_1:
+        __include: keyboards/emoticons:/sad_1
+    emoticon_mad_0:
+        __include: keyboards/emoticons:/mad_0
+    emoticon_mad_1:
+        __include: keyboards/emoticons:/mad_1
 
     symbols:
         __include: keyboards/symbols:/
