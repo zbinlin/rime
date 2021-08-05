@@ -4,20 +4,31 @@ _header_:
     ascii_mode: 1
     columns: 8
     width: 25
-    height: 29
+    height: 32
 
 Keyboards:
-    KeyboardEmoticonHappy: {label: 开心, send: Eisu_toggle, select: emoticon_astonished}
-    KeyboardEmoticonFond: {label: 喜欢,  send: Eisu_toggle, select: emoticon_fond}
-    KeyboardEmoticonAstonished: {label: 惊讶, send: Eisu_toggle, select: emoticon_astonished}
-    KeyboardEmoticonImpotent: {label: 无奈, send: Eisu_toggle, select: emoticon_impotent}
-    KeyboardEmoticonSad: {label: 伤心, send: Eisu_toggle, select: emoticon_sad}
-    KeyboardEmoticonMad: {label: 生气, send: Eisu_toggle, select: emoticon_mad}
+    KeyboardEmoticonHappy: {label: 开心, send: Eisu_toggle, select: emoticon_happy_0}
+    KeyboardEmoticonFond: {label: 喜欢,  send: Eisu_toggle, select: emoticon_fond_0}
+    KeyboardEmoticonAstonished: {label: 惊讶, send: Eisu_toggle, select: emoticon_astonished_0}
+    KeyboardEmoticonImpotent: {label: 无奈, send: Eisu_toggle, select: emoticon_impotent_0}
+    KeyboardEmoticonSad: {label: 伤心, send: Eisu_toggle, select: emoticon_sad_0}
+    KeyboardEmoticonMad: {label: 生气, send: Eisu_toggle, select: emoticon_mad_0}
+    KeyboardEmoticonPageUp: {label: '⎗', send: Eisu_toggle, select: .prior}
+    KeyboardEmoticonPageDown: {label: '⎘', send: Eisu_toggle, select: .next}
+    KeyboardEmoticonPageUpDisabled: {label: '⎗', click: ''}
+    KeyboardEmoticonPageDownDisabled: {label: '⎘', click: ''}
 
-happy:
+happy_0:
     __include: /_header_
     name: 颜文字・开心
     keys:
+        - {click: KeyboardEmoticonHappy, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "^_^"}
         - {click: "^ω^"}
         - {click: "^o^"}
@@ -38,6 +49,23 @@ happy:
         - {click: "╰(*´︶`*)╯"}
         - {click: "*罒▽罒*"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUpDisabled, key_text_color: disabled_fg, hilited_key_text_color: disabled_fg, hilited_key_back_color: functional_bg, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+happy_1:
+    __include: /_header_
+    name: 颜文字・开心
+    keys:
+        - {click: KeyboardEmoticonHappy, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "ヾ ^_^♪"}
         - {click: "=￣ω￣="}
         - {click: "︿(￣︶￣)︿"}
@@ -47,19 +75,33 @@ happy:
         - {click: "✧*｡٩(ˊωˋ*)و✧*｡", key_text_size: "10"}
         - {click: "～(￣▽￣～)(～￣▽￣)～", width: 50}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: KeyboardEmoticonFond, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, width: 12.5}
-        - {click: KeyboardEmoticonSad, width: 12.5}
-        - {click: KeyboardEmoticonMad, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
 
-fond:
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUpDisabled, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+fond_0:
     __include: /_header_
     name: 颜文字・喜欢
     keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "QwQ"}
         - {click: "(●—●)"}
         - {click: "(๑• . •๑)"}
@@ -80,6 +122,23 @@ fond:
         - {click: "(๑•̀ㅂ•́)و✧"}
         - {click: "(ง •̀_•́)ง"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+fond_1:
+    __include: /_header_
+    name: 颜文字・喜欢
+    keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "(｡･ω･｡)ﾉ♡"}
         - {click: "(☆_☆)"}
         - {click: "(๑°3°๑)"}
@@ -90,20 +149,34 @@ fond:
         - {click: "(´∀｀)♡"}
         - {click: "ლ(´ڡ`ლ)"}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, width: 12.5}
-        - {click: KeyboardEmoticonFond, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, width: 12.5}
-        - {click: KeyboardEmoticonSad, width: 12.5}
-        - {click: KeyboardEmoticonMad, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
 
 
-astonished:
+astonished_0:
     __include: /_header_
     name: 颜文字・惊讶
     keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "⊙_⊙"}
         - {click: "d(ŐдŐ๑)"}
         - {click: "Σ( ° △ °|||)︴"}
@@ -124,6 +197,23 @@ astonished:
         - {click: "(°ー°〃)"}
         - {click: "备用"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+astonished_1:
+    __include: /_header_
+    name: 颜文字・惊讶
+    keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "︽⊙_⊙︽"}
         - {click: "!!!∑(°Д°ノ)ノ"}
         - {click: "(๑ŐдŐ)b☆d(ŐдŐ๑)", width: 50}
@@ -132,19 +222,33 @@ astonished:
         - {click: "ヽ(*。>Д<)o゜"}
         - {click: "━((*′д｀)爻(′д｀*))━!!!!", width: 50}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, width: 12.5}
-        - {click: KeyboardEmoticonFond, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, width: 12.5}
-        - {click: KeyboardEmoticonSad, width: 12.5}
-        - {click: KeyboardEmoticonMad, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
 
-impotent:
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+impotent_0:
     __include: /_header_
     name: 颜文字・无奈
     keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "=_="}
         - {click: "╮(╯_╰)╭"}
         - {click: "（︶︿︶）"}
@@ -165,6 +269,23 @@ impotent:
         - {click: "(；一_一)"}
         - {click: "´_>`"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+impotent_1:
+    __include: /_header_
+    name: 颜文字・无奈
+    keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "-_-#"}
         - {click: "┑(￣Д ￣)┍"}
         - {click: "≡￣﹏￣≡"}
@@ -175,19 +296,33 @@ impotent:
         - {click: "( ＿ ＿)ノ｜壁"}
         - {click: "▄█▀█●"}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, width: 12.5}
-        - {click: KeyboardEmoticonFond, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: KeyboardEmoticonSad, width: 12.5}
-        - {click: KeyboardEmoticonMad, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
 
-sad:
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+sad_0:
     __include: /_header_
     name: 颜文字・伤心
     keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "(＞﹏＜)"}
         - {click: "T_T"}
         - {click: "⊙︿⊙"}
@@ -208,6 +343,23 @@ sad:
         - {click: "(つд⊂)"}
         - {click: "心塞(´-ωก`)"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+sad_1:
+    __include: /_header_
+    name: 颜文字・伤心
+    keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+        - {click: KeyboardEmoticonMad, width: 16.66}
+
         - {click: "(╥﹏╥)"}
         - {click: "┭┮﹏┭┮"}
         - {click: "（；´д｀）ゞ"}
@@ -218,19 +370,33 @@ sad:
         - {click: "QAQ"}
         - {click: "ヘ(_ _ヘ)"}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, width: 12.5}
-        - {click: KeyboardEmoticonFond, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, width: 12.5}
-        - {click: KeyboardEmoticonSad, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: KeyboardEmoticonMad, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
 
-mad:
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+mad_0:
     __include: /_header_
     name: 颜文字・生气
     keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+
         - {click: "╰（‵□′）╯"}
         - {click: "(*￣︿￣)"}
         - {click: ">o<"}
@@ -251,6 +417,23 @@ mad:
         - {click: "ψ(｀∇´)ψ"}
         - {click: "(；′⌒`)"}
 
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDown, width: 22.5}
+        - {click: BackSpace, width: 22.5}
+
+mad_1:
+    __include: /_header_
+    name: 颜文字・生气
+    keys:
+        - {click: KeyboardEmoticonHappy, width: 16.66}
+        - {click: KeyboardEmoticonFond, width: 16.66}
+        - {click: KeyboardEmoticonAstonished, width: 16.66}
+        - {click: KeyboardEmoticonImpotent, width: 16.66}
+        - {click: KeyboardEmoticonSad, width: 16.66}
+        - {click: KeyboardEmoticonMad, key_back_color: actived_bg, key_text_color: actived_fg, width: 16.66}
+
         - {click: "s(・｀ヘ´・;)ゞ", key_text_size: "12"}
         - {click: "(▼皿▼#)"}
         - {click: "￣へ￣"}
@@ -261,11 +444,18 @@ mad:
         - {click: "☄ฺ(◣д◢)☄ฺ"}
         - {click: "→_→"}
 
-        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 12.5}
-        - {click: KeyboardEmoticonHappy, width: 12.5}
-        - {click: KeyboardEmoticonFond, width: 12.5}
-        - {click: KeyboardEmoticonAstonished, width: 12.5}
-        - {click: KeyboardEmoticonImpotent, width: 12.5}
-        - {click: KeyboardEmoticonSad, width: 12.5}
-        - {click: KeyboardEmoticonMad, key_back_color: actived_bg, key_text_color: actived_fg, width: 12.5}
-        - {click: BackSpace, width: 12.5}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+        - {click: ''}
+
+        - {click: KeyboardDefault, long_click: KeyboardEmojis, width: 22.5}
+        - {click: KeyboardEmoticonPageUp, width: 22.5}
+        - {click: '', width: 10}
+        - {click: KeyboardEmoticonPageDownDisabled, key_text_color: disabled_fg, hilited_key_text_color: disabled_fg, hilited_key_back_color: functional_bg, width: 22.5}
+        - {click: BackSpace, width: 22.5}

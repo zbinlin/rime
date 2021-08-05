@@ -2,32 +2,21 @@ name: 中文键盘
 author: "Colin Cheng <zbinlin@outlook.com>"
 ascii_mode: 0
 columns: 10
-height: 41
+height: 48
 #lock: true #切換程序時記憶鍵盤
-key_symbol_offset_x: 3
+key_symbol_offset_x: 0
 key_symbol_offset_y: 0
 keys:
-    - {click: 1, long_click: '!'}
-    - {click: 2, long_click: '@'}
-    - {click: 3, long_click: '#'}
-    - {click: 4, long_click: '$'}
-    - {click: 5, long_click: '%'}
-    - {click: 6, long_click: '^'}
-    - {click: 7, long_click: '&'}
-    - {click: 8, long_click: '*'}
-    - {click: 9, long_click: '('}
-    - {click: 0, long_click: ')'}
-
-    - {click: q}
-    - {click: w}
-    - {click: e}
-    - {click: r}
-    - {click: t}
-    - {click: y}
-    - {click: u}
-    - {click: i}
-    - {click: o}
-    - {click: p}
+    - {click: q, long_click: 1, swipe_up: '!', height: 49}
+    - {click: w, long_click: 2, swipe_up: '@'}
+    - {click: e, long_click: 3, swipe_up: '#'}
+    - {click: r, long_click: 4, swipe_up: '$'}
+    - {click: t, long_click: 5, swipe_up: '%'}
+    - {click: y, long_click: 6, swipe_up: '^'}
+    - {click: u, long_click: 7, swipe_up: '&'}
+    - {click: i, long_click: 8, swipe_up: '*'}
+    - {click: o, long_click: 9, swipe_up: '('}
+    - {click: p, long_click: 0, swipe_up: ')'}
 
     - {width: 5}
     - {click: a, long_click: SelectAll}
@@ -52,7 +41,7 @@ keys:
     - {click: '/', long_click: '?'}
     - {click: BackSpace}
 
-    - {click: ModeSwitch}
+    - {click: ModeSwitch, height: 49}
     - {click: KeyboardTextEditing, long_click: KeyboardNumeric, key_symbol_offset_x: 0}
     - {click: ',', label: '，', long_click: '<', swipe_left: '(', swipe_right: '[', swipe_up: '{', paging: PageUp}
     - {click: Space, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, width: 40}
