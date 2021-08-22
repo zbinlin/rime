@@ -23,8 +23,8 @@ keys:
     - {click: ＝, ascii: '='}
     - {click: ｜, ascii: '|'}
     - {click: ＼, ascii: '\'}
-    - {click: ｛, ascii: '{'}
-    - {click: ｝, ascii: '}'}
+    - {click: "［］{Left}", ascii: '[]{Left}'}
+    - {click: "｛｝{Left}", ascii: '{}{Left}'}
     - {width: 5}
 
     - {click: ShiftL}
