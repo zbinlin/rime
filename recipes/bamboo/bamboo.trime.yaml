@@ -71,7 +71,7 @@ style:
         - .default
         - default
         - latin
-        - numeric
+        - number
         - text_editing
         - emoji_smileys_and_emotion_0
         - emoji_smileys_and_emotion_1
@@ -340,7 +340,7 @@ preset_keys:
 
     KeyboardDefault: {label: 返回, ascii: Return, send: Eisu_toggle, select: .default}
     KeyboardLatin: {label: ABC, send: Eisu_toggle, select: latin}
-    KeyboardNumeric: {label: "123", send: Eisu_toggle, select: numeric}
+    KeyboardNumeric: {label: "123", send: Eisu_toggle, select: number}
     KeyboardTextEditing: {label: ⎀, send: Eisu_toggle, select: text_editing}
     KeyboardEmojis: {label: ☺︎, send: Eisu_toggle, select: emoji_smileys_and_emotion_0}
     KeyboardEmoticons: {label: ':-)', send: Eisu_toggle, select: emoticon_happy_0}
@@ -355,7 +355,7 @@ preset_keyboards:
         __include: keyboards/zh:/
     latin:
         __include: keyboards/latin:/
-    numeric:
+    number:
         __include: keyboards/numeric:/
     text_editing:
         __include: keyboards/text_editing:/

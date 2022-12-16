@@ -3,4 +3,4 @@ name: 英文键盘
 author: "Colin Cheng <zbinlin@outlook.com>"
 ascii_mode: 1
 __patch:
-    keys/@41/click: KeyboardDefault
+    keys/@32/click: KeyboardDefault

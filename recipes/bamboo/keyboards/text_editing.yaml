@@ -1,6 +1,6 @@
 name: 文本编辑模式
 author: "Colin Cheng <zbinlin@outlook.com>"
-ascii_mode: 0
+ascii_mode: 1
 columns: 5
 width: 20
 height: 48
