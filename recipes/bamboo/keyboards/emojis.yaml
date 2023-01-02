@@ -1942,8 +1942,8 @@ activities_1:
         - {click: KeyboardEmojiPeopleAndBody}
         - {click: KeyboardEmojiAnimalsAndNature}
         - {click: KeyboardEmojiFoodAndDrink}
-        - {click: KeyboardEmojiTravelAndPlaces, key_back_color: actived_bg, key_text_color: actived_fg}
-        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiTravelAndPlaces}
+        - {click: KeyboardEmojiActivities, key_back_color: actived_bg, key_text_color: actived_fg}
         - {click: KeyboardEmojiObjects}
         - {click: KeyboardEmojiSymbols}
         - {click: KeyboardEmojiFlags}
@@ -2141,8 +2141,8 @@ objects_1:
         - {click: KeyboardEmojiAnimalsAndNature}
         - {click: KeyboardEmojiFoodAndDrink}
         - {click: KeyboardEmojiTravelAndPlaces}
-        - {click: KeyboardEmojiActivities, key_back_color: actived_bg, key_text_color: actived_fg}
-        - {click: KeyboardEmojiObjects}
+        - {click: KeyboardEmojiActivities}
+        - {click: KeyboardEmojiObjects, key_back_color: actived_bg, key_text_color: actived_fg}
         - {click: KeyboardEmojiSymbols}
         - {click: KeyboardEmojiFlags}
         - {click: KeyboardEmoticons}
