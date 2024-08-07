@@ -2,6 +2,7 @@ name: 中文键盘
 author: "Colin Cheng <zbinlin@outlook.com>"
 ascii_mode: 1
 columns: 10
+width: 10
 height: 48
 lock: true #切換程序時記憶鍵盤
 ascii_keyboard: "latin"

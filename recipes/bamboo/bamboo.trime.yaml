@@ -155,6 +155,8 @@ style:
     text_font: latin.ttf #編碼字型
     text_height: 22 #編碼區高度
     text_size: 16 #編碼區字號
+    keyboard_height: 179
+    keyboard_height_land: 179
 
 
 fallback_colors:

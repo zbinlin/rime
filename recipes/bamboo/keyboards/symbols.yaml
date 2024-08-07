@@ -2,6 +2,7 @@ name: 常用符号
 author: "Colin Cheng <zbinlin@outlook.com>"
 #ascii_mode: 0
 columns: 10
+width: 10
 height: 48
 keys:
     - {click: ！, ascii: '!', height: 49}
