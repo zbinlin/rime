@@ -20,16 +20,19 @@ def:
 
 style:
     background_dim_amount: 0.5
+    auto_caps: false #自動句首大寫:true|false
     candidate_font: han.ttf # 候選字型
     candidate_padding: 4 #候選項內邊距
     candidate_spacing: 0 #候選間距
     candidate_text_size: 18 #候選字號
+    candidate_text_vertical_bias: 1.0 #候选文本垂直偏移位置（仅 overlay 模式使用，需要间隙空间足够，范围 0.0~1.0，0.0=top，0.5=center，1.0=bottom）
     candidate_use_cursor: true #高亮候選項
     candidate_view_height: 28 #候選區高度
     color_scheme: default #配色方案
     comment_font: comment.ttf #編碼提示字型
     comment_height: 14 #編碼提示區高度
-    comment_on_top: true #編碼提示在上方或右側
+    comment_position: right #编码提示布局位置：right / top / overlay
+    comment_vertical_bias: 0.0 #编码提示垂直偏移位置（仅 overlay 模式使用，需要间隙空间足够，范围 0.0~1.0，0.0=top，0.5=center，1.0=bottom）
     comment_text_size: 10 #編碼提示字號
     hanb_font: hanb.ttf #擴充字型
     horizontal: true #水平模式
@@ -244,7 +247,7 @@ preset_keys:
     Explorer: {label: Explorer, send: EXPLORER}
     Music: {label: 🎵, send: MUSIC}
     Power: {label: Power, send: POWER}
-    Find: {label: 🔍, send: Find}
+    Find: {label: 🔍, send: FIND}
     Sleep: {label: 💤, send: SLEEP}
     VoiceAssist: {label: "Voice Assist", send: VOICE_ASSIST}
     VolumeDown: {label: 🔈, send: VOLUME_DOWN}
@@ -255,7 +258,7 @@ preset_keys:
     CtrlL: {label: ⎈, combo: Control_L}
     Return: {label: ⏎, send: Return}
     Hide: {label: 🔙, send: BACK}
-    BackSpace: {label: ⌫, repeatable: true, send: BackSpace}
+    BackSpace: {label: ⌫, functional: false, repeatable: true, send: BackSpace}
     Space: {label: ' ', functional: false, repeatable: true, send: space}
     Escape: {label: ⎋, send: Escape}
     Esc: {label: ⎋, text: "\e"}
@@ -278,7 +281,7 @@ preset_keys:
     Copy: {label: ❏, send: Control+c}
     CopyAll: {label: "Select & Copy", text: "{Control+a}{Control+c}"} #全選並複製
     Paste: {label: ▣, send: Control+v}
-    PasteClip: {label: ⎙, send: function, command: clipboard}
+    PasteClip: {label: ⎙, send: FUNCTION, command: clipboard}
     PasteText: {label: "Paste Text", send: Control+Shift+Alt+v} #>=Android 6.0
     ShareText: {label: "Share Text", send: Control+Alt+s} #>=Android 6.0
     Redo: {label: Redo, send: Control+y} #>=Android 6.0
@@ -292,11 +295,11 @@ preset_keys:
     CommitComment: {label: 編碼, send: Control+Shift+Return}
     DeleteCandidate: {label: 刪詞, send: Control+Delete}
     # rime狀態
-    ModeSwitch: {toggle: ascii_mode, send: Mode_switch, states: [ 中文, 英文 ]}
-    ZenkakuHankaku: {toggle: full_shape, send: Mode_switch, states: [ 半角, 全角 ]}
-    Henkan: {toggle: simplification, send: Mode_switch, states: [ 漢字, 汉字 ]}
-    CharsetSwitch: {toggle: extended_charset, send: Mode_switch, states: [ 常用, 扩展 ]}
-    PunctSwitch: {toggle: ascii_punct, send: Mode_switch, states: [ 。，, ．， ]}
+    ModeSwitch: {toggle: ascii_mode, functional: false, send: SWITCH_CHARSET, states: [ 中文, 英文 ]}
+    ZenkakuHankaku: {toggle: full_shape, send: SWITCH_CHARSET, states: [ 半角, 全角 ]}
+    Henkan: {toggle: simplification, send: SWITCH_CHARSET, states: [ 漢字, 汉字 ]}
+    CharsetSwitch: {toggle: extended_charset, send: SWITCH_CHARSET, states: [ 常用, 扩展 ]}
+    PunctSwitch: {toggle: ascii_punct, send: SWITCH_CHARSET, states: [ 。，, ．， ]}
     # trime設定
     IMESwitch: {label: 🌐, send: LANGUAGE_SWITCH} #彈出對話框選擇輸入法
     IMELast: {label: 上一輸入法, send: LANGUAGE_SWITCH, select: .last} #直接切換到上一輸入法
@@ -305,35 +308,35 @@ preset_keys:
     ColorSwitch: {label: 配色, send: PROG_RED}
     DayThemeColor: {label: 🌞, send: PROG_RED}
     NightThemeColor: {label: 🌛, send: PROG_RED}
-    Help: {label: 说明, send: Help}
+    Help: {label: 说明, send: HELP}
     Info: {label: 关于, send: INFO}
-    Menu: {label: ≣, send: Menu}
-    Settings: {label: 设置, send: SETTINGS}
+    Menu: {label: ≣, functional: false, send: MENU}
+    Settings: {label: 设置, functional: false, send: SETTINGS}
     ColorSettings: {label: 配色, send: SETTINGS, option: "color"}
     ThemeSettings: {label: 主题, send: SETTINGS, option: "theme"}
     SchemaSettings: {label: 方案, send: SETTINGS, option: "schema"}
-    CandidateSwitch: {toggle: _hide_candidate, send: Mode_switch, states: [ 有候选, 无候选 ]}
-    CommentSwitch: {toggle: _hide_comment, send: Mode_switch, states: [ 有注释, 无注释 ]}
-    HintSwitch: {toggle: _hide_key_hint, send: Mode_switch, states: [ 有助记, 无助记 ]}
+    CandidateSwitch: {toggle: _hide_candidate, send: SWITCH_CHARSET, states: [ 有候选, 无候选 ]}
+    CommentSwitch: {toggle: _hide_comment, send: SWITCH_CHARSET, states: [ 有注释, 无注释 ]}
+    HintSwitch: {toggle: _hide_key_hint, send: SWITCH_CHARSET, states: [ 有助记, 无助记 ]}
     # trime命令
-    Date: {label: Date, command: date, option: "yyyy-MM-dd"}
-    ChineseDate: {label: 农历, command: date, option: "zh_CN@calendar=chinese"} #農曆等日期(>=Android 7.0)：date 語言@calendar=曆法 格式。具體參見https://developer.android.com/reference/android/icu/util/Calendar.html
-    Time: {label: Time, command: date, option: "HH:mm:ss"} #時間： date 格式
-    TrimeApp: {label: 同文, command: run, option: "com.osfans.trime"} #運行程序: run 包名
-    TrimeCmp: {label: 同文组件, command: run, option: "com.osfans.trime/.Pref"} #運行程序指定組件: run 包名/組件名
-    Homepage: {label: 同文主页, command: run, option: "https://github.com/osfans/trime"} #查看網頁: run 網址
-    CommitHomepage: {label: 同文网址, commit: https://github.com/osfans/trime} #直接上屏
-    Wiki: {label: Wiki, command: run, option: "https://zh.wikipedia.org/wiki/%s"} #搜索網頁: %s或者%1$s爲當前字符
-    Google: {label: Google, command: run, option: "https://www.google.com/search?q=%s"} #搜索網頁: %s或者%1$s爲當前字符
-    MoeDict: {label: 萌典, command: run, option: "https://www.moedict.tw/%3$s"} #搜索網頁: %3$s爲光標前字符
-    Baidu: {label: Baidu, command: run, option: "https://www.baidu.com/s?wd=%4$s"} #搜索網頁: %4s爲光標前所有字符
-    Zdic: {label: 漢典, command: run, option: "http://www.zdic.net/sousuo/?q=%1$s"} #搜索網頁: %s或者%1$s爲當前字符
-    Zdic2: {label: 漢典, command: run, option: "http://www.zdic.net/sousuo/?q=%2$s"} #搜索網頁: %2$s爲當前輸入的編碼
-    WebSearch: {label: 🔍, command: web_search, option: "https://www.bing.com/search?q=%4$s"} #搜索，其他view、dial、edit、search等intent，參考安卓的intent文檔：https://developer.android.com/reference/android/content/Intent.html
-    Search: {label: Search, command: search, option: "%1$s"} #搜索短信、字典等
-    Share: {label: Share, command: send, option: "%s"} #分享指定文本: %s或者%1$s爲當前字符
-    Deploy: {label: Deploy, command: broadcast, option: "com.osfans.trime.deploy"}
-    Sync: {label: Sync, command: broadcast, option: "com.osfans.trime.sync"}
+    Date: {label: Date, send: FUNCTION, command: date, option: "yyyy-MM-dd"}
+    ChineseDate: {label: 农历, send: FUNCTION, command: date, option: "zh_CN@calendar=chinese"} #農曆等日期(>=Android 7.0)：date 語言@calendar=曆法 格式。具體參見https://developer.android.com/reference/android/icu/util/Calendar.html
+    Time: {label: Time, send: FUNCTION, command: date, option: "HH:mm:ss"} #時間： date 格式
+    TrimeApp: {label: 同文, send: FUNCTION, command: run, option: "com.osfans.trime"} #運行程序: run 包名
+    TrimeCmp: {label: 同文组件, send: FUNCTION, command: run, option: "com.osfans.trime/.Pref"} #運行程序指定組件: run 包名/組件名
+    Homepage: {label: 同文主页, send: FUNCTION, command: run, option: "https://github.com/osfans/trime"} #查看網頁: run 網址
+    CommitHomepage: {label: 同文网址, send: FUNCTION, command: run, option: https://github.com/osfans/trime} #直接上屏
+    Wiki: {label: Wiki, send: FUNCTION, command: run, option: "https://zh.wikipedia.org/wiki/%s"} #搜索網頁: %s或者%1$s爲當前字符
+    Google: {label: Google, send: FUNCTION, command: run, option: "https://www.google.com/search?q=%s"} #搜索網頁: %s或者%1$s爲當前字符
+    MoeDict: {label: 萌典, send: FUNCTION, command: run, option: "https://www.moedict.tw/%3$s"} #搜索網頁: %3$s爲光標前字符
+    Baidu: {label: Baidu, send: FUNCTION, command: run, option: "https://www.baidu.com/s?wd=%4$s"} #搜索網頁: %4s爲光標前所有字符
+    Zdic: {label: 漢典, send: FUNCTION, command: run, option: "http://www.zdic.net/sousuo/?q=%1$s"} #搜索網頁: %s或者%1$s爲當前字符
+    Zdic2: {label: 漢典, send: FUNCTION, command: run, option: "http://www.zdic.net/sousuo/?q=%2$s"} #搜索網頁: %2$s爲當前輸入的編碼
+    WebSearch: {label: 🔍, send: FUNCTION, command: web_search, option: "https://www.bing.com/search?q=%4$s"} #搜索，其他view、dial、edit、search等intent，參考安卓的intent文檔：https://developer.android.com/reference/android/content/Intent.html
+    Search: {label: Search, send: FUNCTION, command: search, option: "%1$s"} #搜索短信、字典等
+    Share: {label: Share, send: FUNCTION, command: send, option: "%s"} #分享指定文本: %s或者%1$s爲當前字符
+    Deploy: {label: Deploy, send: FUNCTION, command: broadcast, option: "com.osfans.trime.deploy"}
+    Sync: {label: Sync, send: FUNCTION, command: broadcast, option: "com.osfans.trime.sync"}
 
     Hyperlink: {label: 🔗, text: "https://"}
 

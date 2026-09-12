@@ -5,7 +5,7 @@ columns: 5
 width: 20
 height: 48
 keys:
-    - {click: '+', long_click: '±', height: 49}
+    - {click: '+', long_click: '±'}
     - {click: 1}
     - {click: 2, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down}
     - {click: 3}
@@ -23,7 +23,7 @@ keys:
     - {click: 9}
     - {click: BackSpace}
 
-    - {click: KeyboardDefault, height: 49}
+    - {click: KeyboardDefault}
     - {click: Space}
     - {click: 0}
     - {click: '.', long_click: ','}

@@ -5,7 +5,7 @@ columns: 5
 width: 20
 height: 48
 keys:
-    - {click: Esc, height: 49}
+    - {click: Esc}
     - {click: Home}
     - {click: Up}
     - {click: End}
@@ -23,7 +23,7 @@ keys:
     - {click: PageDown}
     - {click: BackSpace}
 
-    - {click: KeyboardDefault, height: 49}
+    - {click: KeyboardDefault}
     - {click: Cut}
     - {click: Copy}
     - {click: Paste, long_click: PasteClip}
